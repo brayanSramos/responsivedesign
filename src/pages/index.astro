@@ -9,19 +9,6 @@ const allPosts = await Astro.glob("../content/*.md");
 ---
 
 <Header />
-
-<div class="box images">
-  <div class="imgBx">
-    <img class="imge" src="img/num_1.jpg" alt="" />
-  </div>
-  <div class="imgBx">
-    <img class="imge" src="img/num_2.jpg" alt="" />
-  </div>
-  <div class="imgBx">
-    <img class="imge" src="img/num_3.png" alt="" />
-  </div>
-</div>
-
 <!--select -1-->
 <section class="banner">
   <div class="box content">
@@ -30,6 +17,7 @@ const allPosts = await Astro.glob("../content/*.md");
       <p>Elevando la Experiencia Digital a Nuevos Horizontes</p>
     </div>
   </div>
+
   <div class="box images">
     <div class="imgBx">
       <img class="imge" src="img/num_1.jpg" alt="" />
@@ -43,17 +31,6 @@ const allPosts = await Astro.glob("../content/*.md");
   </div>
 </section>
 
-<div class="box images">
-  <div class="imgBx">
-    <img class="imge" src="img/num_1.jpg" alt="" />
-  </div>
-  <div class="imgBx">
-    <img class="imge" src="img/num_2.jpg" alt="" />
-  </div>
-  <div class="imgBx">
-    <img class="imge" src="img/num_3.png" alt="" />
-  </div>
-</div>
 <Select />
 <Footer />
 <script>

@@ -6,25 +6,26 @@ const allPosts = await Astro.glob("../content/dev.md");
 
 <!--select -2-->
 <section class="banner">
-  
-    {
-      allPosts.map((item) => ( 
-        <Card
-          title={item?.frontmatter?.title}
-          description={item?.frontmatter?.description}
-          pubDate={item?.frontmatter?.pubDate}
-          image={item?.frontmatter?.image}
-          tags={item?.frontmatter?.tags}/>
-      ))
-    }
-    <div class="box2 content">
-      <div class="">
-        <h2>En Responsive Design</h2>
-        <div class="main-content1">
-          <p class="pfo">
+  {
+    allPosts.map((item) => (
+      <Card
+        title={item?.frontmatter?.title}
+        description={item?.frontmatter?.description}
+        pubDate={item?.frontmatter?.pubDate}
+        image={item?.frontmatter?.image}
+        tags={item?.frontmatter?.tags}
+      />
+    ))
+  }
+  <div class="box2 content">
+    <div class="">
+      <h2>En Responsive Design</h2>
+      <div class="main-content1">
+        <div class="pfo">
+          <p>
             creamos experiencias digitales cautivadoras. Somos una agencia
-            creativa especializada en diseño web, comprometida con la excelencia,
-            la innovación y la conexión emocional con el público.
+            creativa especializada en diseño web, comprometida con la
+            excelencia, la innovación y la conexión emocional con el público.
           </p>
         </div>
         <button>
@@ -32,4 +33,7 @@ const allPosts = await Astro.glob("../content/dev.md");
         </button>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
+<style></style>
