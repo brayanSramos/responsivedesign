@@ -1,0 +1,470 @@
+@font-face {
+    font-family: Light-Italic;
+    src: url(../Font/Sugo-Pro-Classic-Light-Italic-trial.ttf);
+  }
+  * {
+    font-family: "Source Code Pro", monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: #ffffff;
+    transition: 0.8s ease all;
+  }
+  body.dark {
+    background: rgb(0, 0, 0);
+  }
+  
+  .banner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .banner .box {
+    position: relative;
+    height: 100vh;
+  }
+  
+  /*
+  color total mente blanco sin negro
+  .banner{
+      .box:last-child{
+              background: $ColTex;
+      }
+  
+  }
+  */
+  header {
+    background: rgba(255, 255, 255, 0.5);
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0px 20px;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 10;
+    transition: 0.7s;
+  }
+  header.abajo{
+    background: rgba(255, 255, 255, 0.747);
+    padding: 20px;
+  }
+  body.dark header {
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  body.dark header a {
+    color: #ffffff;
+  }
+  body.dark header a:hover {
+    color: #550197;
+  }
+  
+  .logoPc {
+    width: 100px;
+  }
+  .logo {
+    width: 100px;
+  }
+  
+  header ul {
+    display: flex;
+  }
+  
+  header ul li {
+    list-style: none;
+    margin-left: 30px;
+  }
+  
+  header ul li a {
+    font-family: Light-Italic;
+    font-size: 120%;
+    text-decoration: none;
+    font-weight: 500;
+    color: #550197;
+    letter-spacing: 1px;
+    transition: 0.7s;
+  }
+
+  
+  
+  header ul li a:hover {
+    color: #000000;
+  }
+
+   /* Estilo menu Inicio - a -------------------------------------- */
+
+  .menuitem{
+    --primary-color: #111;
+    --hovered-color: #111;
+    position: relative;
+    display: flex;
+    font-weight: 600;
+    font-size: 20px;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  .menuitem::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    left: 0;
+    bottom: -7px;
+    background: var(--hovered-color);
+    height: 2px;
+    transition: 0.3s ease-out;
+  }
+  .menuitem::before {
+    position: absolute;
+    /*   box-sizing: border-box; */
+    content: "Subscribe";
+    width: 0%;
+    inset: 0;
+    color: var(--hovered-color);
+    overflow: hidden;
+    transition: 0.3s ease-out;
+  }
+  .menuitem:hover::after {
+    width: 100%;
+  }
+  
+  .menuitem:hover p::before {
+    width: 100%;
+  }
+
+   /* Estilo munu fin - a  -------------------------------------- */
+
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+  }
+  
+  .content h2 {
+    font-family: Light-Italic;
+    font-size: 4em;
+    color: #550197;
+  }
+
+  body.dark .content h2 {
+    color: #ffffff;
+  }
+  body.dark .content h1 {
+    color: #ffffff;
+  }
+  
+  .content h2 p {
+    font-size: 1.1em;
+    color: #e0da03;
+    line-height: 1.8em;
+  }
+  body.dark .content p {
+    color: #ffffff;
+  }
+  
+ /* boton uno -------------------------------------- */
+
+  button {
+    /* Variables */
+    --button_radius: 0.75em;
+    --button_color: #ffffff;
+    --button_outline_color: #550197;
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    border-radius: var(--button_radius);
+    background: var(--button_outline_color);
+  }
+  
+  .button_top {
+    display: block;
+    box-sizing: border-box;
+    border: 2px solid var(--button_outline_color);
+    border-radius: var(--button_radius);
+    padding: 0.75em 1.5em;
+    background: var(--button_color);
+    color: var(--button_outline_color);
+    transform: translateY(-0.2em);
+    transition: transform 0.1s ease;
+  }
+  
+  button:hover .button_top {
+    /* Pull the button upwards when hovered */
+    transform: translateY(-0.33em);
+  }
+  
+  button:active .button_top {
+    /* Push the button downwards when pressed */
+    transform: translateY(0);
+  }
+/* 😶‍🌫️ boton dos -------------------------------------- */
+  .btn {
+    font-family: Light-Italic;
+    display: inline-block;
+    font-size: 1.1em;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    border-radius: 10px;
+    border: 2px solid #550197;
+    padding: 10px 30px;
+    letter-spacing: 1px;
+    transition: 0.2s;
+  }
+  body.dark .btn {
+    color: #ffffff;
+  }
+  
+  .btn:hover {
+    background: #550197;
+    color: #ffffff;
+    letter-spacing: 1px;
+  }
+  
+  body.dark .btn {
+    color: #ffffff;
+  }
+  .sci {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 30px;
+    right: 60px;
+  }
+  
+  .sci h3 {
+    font-family: Light-Italic;
+    font-weight: 500;
+    color: #550197;
+    letter-spacing: 1px;
+  }
+  body.dark .sci h3 {
+    color: #ffffff;
+  }
+  
+  .sci li {
+    list-style: none;
+    margin-left: 20px;
+  }
+  
+  .sci li .imge {
+    max-width: 30px;
+  }
+  
+  .images {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .images .imgBx {
+    position: relative;
+    width: 50%;
+    background: #550197;
+  }
+  
+  .images .imgBx:nth-child(2) {
+    background: #2a8ae1;
+  }
+  
+  .images .imgBx:nth-child(3) {
+    width: 100%;
+    background: #f82cb2;
+  }
+  
+  .images .imgBx .imge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+  
+  .switch {
+    background: #550197;
+    border-radius: 1000px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    outline: none;
+  }
+  .switch::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: #f1f1f1;
+    top: 0;
+    left: 0;
+    right: unset;
+    border-radius: 100px;
+    transition: 3s ease all;
+    box-shadow: 0px 0px 2px 2px #550197;
+  }
+  .switch.active {
+    background: #fff701;
+    color: #000;
+  }
+  .switch.active::after {
+    right: 0;
+    left: unset;
+  }
+  .switch span {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    background: none;
+    color: #fff;
+  }
+  
+  .imgls {
+    height: 23px;
+    left: 3px;
+    bottom: -3px;
+    position: relative;
+  }
+  
+  .footer {
+    background: #ffffff;
+    padding: 3rem;
+    width: 100%;
+  }
+  body.dark .footer {
+    background: #000;
+  }
+  
+  .inner-footer {
+    width: 70%;
+    margin: 0 auto;
+    color: rgb(0, 0, 0);
+  }
+  body.dark .inner-footer {
+    color: #fff;
+  }
+
+  /* 😶‍🌫️ Select 2 -------------------------------------- */
+
+  body.dark .card1 {
+    background: #000000;
+    color: #ffffff;
+  }
+  .pfo {
+    padding: 10px;
+  }
+
+  .card1 {
+    width: 320px;
+    height: 350px;
+    padding: 20px;
+    color: white;
+    background: transparent;
+    border-radius: 12px;
+    border: 2px solid #550197;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transform-origin: center center;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border-radius: 12px;
+    background-color: #550197;
+    rotate: 344deg;
+    box-shadow: 0px 3px 187.5px 7.5px #5601979a;
+  }
+
+  .card1 .main-content1 {
+    flex: 1;
+  }
+
+  .header1 {
+    margin-bottom: 24px;
+  }
+
+  .card1 .heading1 {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.2;
+  }
+
+  .card1 .footer1 {
+    font-weight: 400;
+    margin-right: 4px;
+  }
+
+  /*.card1:hover {
+  border-radius: 12px;
+  background-color: #550197;
+  scale: 0.95;
+  rotate: 5deg;
+  box-shadow: 0px 3px 187.5px 7.5px #5601979a;
+}*/
+  @media (max-width: 991px) {
+    .card1 {
+      width: 547px;
+      height: 547px;
+    }
+    .banner2 .box2 {
+      height: 48vh;
+    }
+  }
+
+/*😶‍🌫️ Select fin --------------------------------------------------*/
+
+  @media (max-width: 991px) {
+    .banner {
+      grid-template-columns: 1fr;
+    }
+    header {
+      padding: 20px 40px;
+    }
+    .content {
+      position: 40px;
+    }
+    .banner .box .content {
+      height: 70vh;
+    }
+    .content .box .images {
+      height: auto;
+    }
+
+    .logoPc {
+      display: none;
+    }
+    
+    header ul {
+      display: none;
+    }
+    
+    header ul li {
+      display: none;
+    }
+    
+    header ul li a {
+      display: none;
+    }
+    
+    header ul li a:hover {
+      display: none;
+    }
+
+  }
+  @media (max-width: 600px) {
+    .content h2 {
+      font-size: 3em;
+    }
+    .images .imgBx {
+      width: 100%;
+      height: 34vh;
+    }
+    .images .imgBx .imge {
+      width: 100%;
+    }
+  }

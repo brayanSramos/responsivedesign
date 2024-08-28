@@ -1,0 +1,35 @@
+---
+import Card from "../components/Card.astro";
+import "../style/global.css";
+const allPosts = await Astro.glob("../content/dev.md");
+---
+
+<!--select -2-->
+<section class="banner">
+  
+    {
+      allPosts.map((item) => ( 
+        <Card
+          title={item?.frontmatter?.title}
+          description={item?.frontmatter?.description}
+          pubDate={item?.frontmatter?.pubDate}
+          image={item?.frontmatter?.image}
+          tags={item?.frontmatter?.tags}/>
+      ))
+    }
+    <div class="box2 content">
+      <div class="">
+        <h2>En Responsive Design</h2>
+        <div class="main-content1">
+          <p class="pfo">
+            creamos experiencias digitales cautivadoras. Somos una agencia
+            creativa especializada en diseño web, comprometida con la excelencia,
+            la innovación y la conexión emocional con el público.
+          </p>
+        </div>
+        <button>
+          <span class="button_top">Mas Informacion</span>
+        </button>
+      </div>
+    </div>
+  </section>
