@@ -1,18 +1,75 @@
-    <!----------------------------------------color blanco y negro FIN-------------------------------------------------->
-    <footer class="footer">
-        <div class="inner-footer">
-            <nav>
-                <ul class="sci">
-                    <h3>Redes</h3>
-                    <li><a href="#"><img class="imge" src="img/icon/github.svg"></a></li>
-                    <li><a href="#"><img class="imge" src="img/icon/dribbble.svg"></a></li>
-                    <li><a href="#"><img class="imge" src="img/icon/twitter.svg"></a></li>
-                    <li><a href="#"><img class="imge" src="img/icon/whatsapp.svg"></a></li>
-                    <li><a href="#"><img class="imge" src="img/icon/gmail.svg"></a></li>
-                </ul>
-            </nav>
-        </div>
-    </footer>
+---
+import Behance from "./icon/behance.astro";
+import Dribbble from "./icon/dribbble.astro";
+import Github from "./icon/github.astro";
+import Twitter from "./icon/twitter.astro";
+import Whatsapp from "./icon/whatsapp.astro";
+import Gmail from "./icon/gmail.astro";
+import "../style/global.css";
+---
 
+<footer class="footer">
+  <div class="inner-footer">
+    <nav>
+      <ul class="sci">
+        <div class="animation"><h3>Redes:</h3></div>
+        <li>
+          <a href="#">
+            <Github class="h-6 w-6" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <Twitter class="h-6 w-6" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <Gmail class="h-6 w-6" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <Whatsapp class="h-6 w-6" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <Behance class="h-6 w-6" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <Dribbble class="h-6 w-6" />
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
 
+<style>
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+  }
 
+  @keyframes blink-caret {
+    50% {
+      border-color: transparent;
+    }
+  }
+  /* When you change the amount of characters in the h1, you have to change 
+the with: 14ch and  steps(14, end), if there is 14 characters, put 14, 
+if there is 20 put 20 */
+  .animation {
+    border-right: 0.1em solid var(--Logo1-color);
+    width: 4.2ch;
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-animation:
+      typing 2s steps(10, end),
+      blink-caret 0.2s step-end infinite alternate;
+  }
+</style>

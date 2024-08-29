@@ -11,10 +11,10 @@
   --ya-color: #e0da03;
   --ro-color: #f82cb2;
 
-    /* Variables Button uno */
-    --button_radius: 0.75em;
-      --button_color: var(--primary-color);
-      --button_outline_color: var(--Logo1-color);
+  /* Variables Button uno */
+  --button_radius: 0.75em;
+  --button_color: var(--primary-color);
+  --button_outline_color: var(--Logo1-color);
 }
 
 @font-face {
@@ -89,9 +89,31 @@ body.dark header a:hover {
   color: var(--primary-color);
 }
 
+/* SVG Logo color inicio */
+
 .logoPc {
   width: 4%;
 }
+.cls-1 {
+  fill: none;
+  stroke: var(--Logo1-color);
+  stroke-miterlimit: 10;
+  stroke-width: 16.4px;
+}
+.cls-2 {
+  fill: var(--Logo1-color);
+  stroke-width: 0;
+}
+
+body.dark .cls-1 {
+  stroke: var(--primary-color);
+}
+
+body.dark .cls-2 {
+  fill: var(--primary-color);
+}
+
+/* SVG Logo  color fin */
 
 .logo {
   width: 38%;
@@ -230,7 +252,9 @@ button:active .button_top {
   transform: translateY(0);
 }
 
+
 /* 😶‍🌫️ Button dos -------------------------------------- */
+
 .btn {
   font-family: Light-Italic;
   display: inline-block;

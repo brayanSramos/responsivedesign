@@ -1,11 +1,13 @@
 ---
 import "../style/global.css";
-import logo from "../../public/img/icon/icon.svg";
+import Logo from "../components/icon/logoRd.astro";
+import logow from "../../public/img/icon/iconWh.svg";
 ---
 
 <section class="zona1">
   <header>
-    <img src={logo.src} alt="logo" class="logoPc" />
+    <!--  <img src={logo.src} alt="logo" class="logoPc" /> -->
+    <Logo class="logoPc" />
     <!-- Menu movil y Logo en SVG-->
     <div class="container">
       <input id="toggle" type="checkbox" />
@@ -22,7 +24,7 @@ import logo from "../../public/img/icon/icon.svg";
       </nav>
     </div>
     <dir class="logoMovil">
-      <img src={logo.src} alt="logo" class="logo" />
+      <img src={logow.src} alt="logo" class="logo" />
     </dir>
     <!-- final - Menu movil y Logo en SVG-->
 
