@@ -5,46 +5,58 @@ import Github from "./icon/github.astro";
 import Twitter from "./icon/twitter.astro";
 import Whatsapp from "./icon/whatsapp.astro";
 import Gmail from "./icon/gmail.astro";
+import Logo from "./icon/logoRd.astro";
 import "../style/global.css";
 ---
 
 <footer class="footer">
   <div class="inner-footer">
-    <nav>
-      <ul class="sci">
-        <div class="animation"><h3>Redes:</h3></div>
-        <li>
-          <a href="#">
-            <Github class="h-6 w-6" />
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <Twitter class="h-6 w-6" />
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <Gmail class="h-6 w-6" />
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <Whatsapp class="h-6 w-6" />
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <Behance class="h-6 w-6" />
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <Dribbble class="h-6 w-6" />
-          </a>
-        </li>
-      </ul>
-    </nav>
+    <aside class="footer-center">
+      <Logo class="w-50 h-50" />
+      <p class="font-bold m-3">
+        ACME Industries Ltd.
+        <br />
+        Providing reliable tech since 1992
+      </p>
+      <nav class="m-3">
+        <ul class="sci">
+          <div class="animation"><h3>Redes:</h3></div>
+          <li>
+            <a href="#">
+              <Github class="h-6 w-6" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <Twitter class="h-6 w-6" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <Gmail class="h-6 w-6" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <Whatsapp class="h-6 w-6" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <Behance class="h-6 w-6" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <Dribbble class="h-6 w-6" />
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <p class="m-3">
+        Copyright © {new Date().getFullYear()} - All right reserved
+      </p>
+    </aside>
   </div>
 </footer>
 
@@ -60,9 +72,6 @@ import "../style/global.css";
       border-color: transparent;
     }
   }
-  /* When you change the amount of characters in the h1, you have to change 
-the with: 14ch and  steps(14, end), if there is 14 characters, put 14, 
-if there is 20 put 20 */
   .animation {
     border-right: 0.1em solid var(--Logo1-color);
     width: 4.2ch;

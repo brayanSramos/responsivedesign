@@ -1,38 +1,19 @@
 ---
 import Header from "../components/header.astro";
 import Footer from "../components/footer.astro";
-import Select from "../components/select.astro";
-import Card from "../components/Card.astro";
-import "../style/global.css";
-
-const allPosts = await Astro.glob("../content/*.md");
+import SelectQuines from "../components/select/select.astro";
+import SelectInicio from "../components/select/selectincio.astro";
+import Layout from "../layouts/Layout.astro";
 ---
 
-<Header />
-<!--select -1-->
-<section class="banner">
-  <div class="box content">
-    <div class="">
-      <h2>Responsive Design</h2>
-      <p>Elevando la Experiencia Digital a Nuevos Horizontes</p>
-    </div>
-  </div>
+<Layout title="Responsive Design">
+  <Header />
+  <!--select -1-->
+  <SelectInicio />
+  <SelectQuines />
+  <Footer />
+</Layout>
 
-  <div class="box images">
-    <div class="imgBx">
-      <img class="imge" src="img/num_1.jpg" alt="" />
-    </div>
-    <div class="imgBx">
-      <img class="imge" src="img/num_2.jpg" alt="" />
-    </div>
-    <div class="imgBx">
-      <img class="imge" src="img/num_3.png" alt="" />
-    </div>
-  </div>
-</section>
-
-<Select />
-<Footer />
 <script>
   const btnSwitch = document.querySelector("#switch");
   btnSwitch.addEventListener("click", () => {

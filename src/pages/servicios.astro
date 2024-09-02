@@ -1,26 +1,35 @@
 ---
 import Header from "../components/header.astro";
 import Footer from "../components/footer.astro";
-import Card from "../components/Card.astro";
+import Card from "../components/card/Card.astro";
 import "../style/global.css";
-
+import Content from "../components/card/cardservicio.astro";
 const allPosts = await Astro.glob("../content/*.md");
 ---
+
 <Header />
-
-<ul role="list" class="link-card-grid">
-  {
-    allPosts.map((item) => ( 
-      <Card
-        title={item?.frontmatter?.title}
-        description={item?.frontmatter?.description}
-        pubDate={item?.frontmatter?.pubDate}
-        image={item?.frontmatter?.image}
-        tags={item?.frontmatter?.tags}/>
-    ))
-  }
-</ul>
-
+<div class="box2 content">
+  <Content />
+</div>
+<div class="box2 content">
+  <dir>
+    <li>
+      <ul role="list" class="link-card-grid">
+        {
+          allPosts.map((item) => (
+            <Card
+              title={item?.frontmatter?.title}
+              description={item?.frontmatter?.description}
+              pubDate={item?.frontmatter?.pubDate}
+              image={item?.frontmatter?.image}
+              tags={item?.frontmatter?.tags}
+            />
+          ))
+        }
+      </ul>
+    </li>
+  </dir>
+</div>
 <Footer />
 <script>
   const btnSwitch = document.querySelector("#switch");
