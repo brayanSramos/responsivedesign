@@ -12,7 +12,7 @@ import "../../style/global.css";
 
   <div class="boxdiv images">
     <div class="imgBx">
-      <div class="content">
+      <div class="contentimg">
         <div class="colortxt">
           <p>Creatividad en Acción</p>
         </div>
@@ -20,7 +20,7 @@ import "../../style/global.css";
       <!-- <img class="imge" src="img/num_4.jpg" alt="Creatividad en Acción" /> -->
     </div>
     <div class="imgBx">
-      <div class="content">
+      <div class="contentimg">
         <div class="colortxt">
           <p>Innovación en Cada Píxel</p>
         </div>
@@ -28,7 +28,7 @@ import "../../style/global.css";
       <!-- <img class="imge" src="img/num_4.jpg" alt="Creatividad en Acción" /> -->
     </div>
     <div class="imgBx">
-      <div class="content">
+      <div class="contentimg">
         <div class="colortxt">
           <p>Únete a la Revolución Creativa</p>
         </div>
@@ -37,3 +37,33 @@ import "../../style/global.css";
     </div>
   </div>
 </section>
+
+<style>
+  .contentimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 60px; */
+    padding: 15%;
+  }
+
+  .contentimg h2 {
+    font-family: Light-Italic;
+    font-size: 4em;
+    color: var(--Logo1-color);
+  }
+
+  body.dark .contentimg h2 {
+    color: var(--primary-color);
+  }
+
+  body.dark .contentimg h1 {
+    color: var(--primary-color);
+  }
+
+  @media (max-width: 600px) {
+    .contentimg {
+      padding: 29%;
+    }
+  }
+</style>

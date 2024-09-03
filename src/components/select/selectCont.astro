@@ -1,0 +1,22 @@
+---
+import Card from "../card/cardCont.astro";
+import Content from "../card/content.astro";
+import "../../style/global.css";
+const allPosts = await Astro.glob("../../content/dev.md");
+---
+
+<!--select -2-->
+<section class="banner">
+  {
+    allPosts.map((item) => (
+      <Card
+        title={item?.frontmatter?.title}
+        description={item?.frontmatter?.description}
+        pubDate={item?.frontmatter?.pubDate}
+        image={item?.frontmatter?.image}
+        tags={item?.frontmatter?.tags}
+      />
+    ))
+  }
+  <Content />
+</section>

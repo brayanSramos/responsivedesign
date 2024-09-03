@@ -197,7 +197,7 @@ body.dark .menuitem::after {
   justify-content: center;
   align-items: center;
   /* padding: 60px; */
-  padding: 212px;
+  padding: 15%;
 }
 
 .content h2 {
@@ -325,7 +325,13 @@ body.dark .content p {
     transform: translate3d(0, 0, 1em);
   }
 
-/* Card  --------------------------------------------------------------------------------------------- */
+  /* Parrafo de componente catent Inicio --------------------------------------------------------------------------------------------- */
+  
+  .marpar {
+    margin: 0px 0px 30px 0px;
+  }
+/* Parrafo de componente catent Fin  --------------------------------------------------------------------------------------------- */
+
 
 /* Button uno -------------------------------------- */
 
@@ -535,30 +541,6 @@ body.dark .card1 {
   color: var(--primary-color);
 }
 
-.pfo {
-  padding: 21px 0px;
-  margin-right: 148px;
-}
-
-.card1 {
-  width: 320px;
-  height: 350px;
-  padding: 20px;
-  color: var(--primary-color);
-  background: transparent;
-  border-radius: 12px;
-  border: 2px solid var(--Logo1-color);
-  display: flex;
-  flex-direction: column;
-  cursor: pointer;
-  transform-origin: center center;
-  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  border-radius: 12px;
-  background-color: var(--Logo1-color);
-  rotate: 344deg;
-  box-shadow: 0px 3px 187.5px 7.5px var(--Logo1-900-color);
-}
-
 .card1 .main-content1 {
   flex: 1;
 }
@@ -615,7 +597,7 @@ body.dark .card1 {
   .content {
     position: 40px;
   }
-
+  
   .banner .box .content {
     height: 70vh;
   }
