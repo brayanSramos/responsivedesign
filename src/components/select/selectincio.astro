@@ -12,9 +12,29 @@ import "../../style/global.css";
 
   <div class="boxdiv images">
     <div class="imgBx">
-      <div class="contentimg">
+      <div class="texstyle1">
         <div class="colortxt">
-          <p>Creatividad en Acción</p>
+          <div class="mockup-codee">
+            <pre><code>Creatividad en Acción</code></pre>
+            <pre
+              data-prefix=">"
+              class="text-warning"><code>installing...</code></pre>
+          </div>
+          <p></p>
+        </div>
+      </div>
+      <!-- <img class="imge" src="img/num_4.jpg" alt="Creatividad en Acción" /> -->
+    </div>
+    <div class="imgBx">
+      <div class="texstyle1">
+        <div class="colortxt">
+          <div class="mockup-codee">
+            <pre><code>Innovación en Cada Píxel</code></pre>
+            <pre
+              data-prefix=">"
+              class="text-success"><code>installing...</code></pre>
+          </div>
+          <p></p>
         </div>
       </div>
       <!-- <img class="imge" src="img/num_4.jpg" alt="Creatividad en Acción" /> -->
@@ -22,15 +42,11 @@ import "../../style/global.css";
     <div class="imgBx">
       <div class="contentimg">
         <div class="colortxt">
-          <p>Innovación en Cada Píxel</p>
-        </div>
-      </div>
-      <!-- <img class="imge" src="img/num_4.jpg" alt="Creatividad en Acción" /> -->
-    </div>
-    <div class="imgBx">
-      <div class="contentimg">
-        <div class="colortxt">
-          <p>Únete a la Revolución Creativa</p>
+          <div class="mockup-codee">
+            <pre><code>Únete a la Revolución Creativa</code></pre>
+            <pre data-prefix=">" class="text-warning"><code>Done!</code></pre>
+          </div>
+          <p></p>
         </div>
       </div>
       <!-- <img class="imge" src="img/num_3.png" alt="Creatividad en Acción" /> -->
@@ -43,8 +59,8 @@ import "../../style/global.css";
     display: flex;
     justify-content: center;
     align-items: center;
-    /* padding: 60px; */
-    padding: 15%;
+    padding: 9%;
+    height: 530px;
   }
 
   .contentimg h2 {
@@ -56,6 +72,9 @@ import "../../style/global.css";
   body.dark .contentimg h2 {
     color: var(--primary-color);
   }
+  body.dark p {
+    color: var(--primary-color);
+  }
 
   body.dark .contentimg h1 {
     color: var(--primary-color);
@@ -63,7 +82,57 @@ import "../../style/global.css";
 
   @media (max-width: 600px) {
     .contentimg {
-      padding: 29%;
+      padding: 7%;
+      height: 355px;
     }
+  }
+  .texstyle1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 9%;
+    height: 354px;
+  }
+  .mockup-codee {
+    position: relative;
+    overflow: hidden;
+    overflow-x: auto;
+    min-width: 18rem /* 288px */;
+    border-radius: var(--rounded-box, 1rem /* 16px */);
+    --tw-bg-opacity: 1;
+    background-color: var(--dark-color, oklch(var(--n) / var(--tw-bg-opacity)));
+    padding-top: 1.25rem /* 20px */;
+    padding-bottom: 1.25rem /* 20px */;
+    --tw-text-opacity: 1;
+    color: var(--fallback-nc, oklch(var(--nc) / var(--tw-text-opacity)));
+    direction: ltr;
+  }
+  .mockup-codee pre[data-prefix]:before {
+    content: attr(data-prefix);
+    content: attr(data-prefix);
+    display: inline-block;
+    text-align: right;
+    width: 2rem /* 32px */;
+    opacity: 0.5;
+  }
+  .mockup-codee:before {
+    content: "";
+    margin-bottom: 1rem /* 16px */;
+    display: block;
+    height: 0.75rem /* 12px */;
+    width: 0.75rem /* 12px */;
+    border-radius: 9999px;
+    opacity: 0.3;
+    box-shadow:
+      1.4em 0,
+      2.8em 0,
+      4.2em 0;
+  }
+  .mockup-codee pre {
+    padding-right: 1.25rem /* 20px */;
+  }
+  .mockup-codee pre:before {
+    content: "";
+    margin-right: 2ch;
   }
 </style>

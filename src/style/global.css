@@ -45,7 +45,8 @@ body.dark {
 
 .banner .box {
   position: relative;
-  height: 100vh;
+  height: 80vh;
+  /* height: 100vh; */
 }
 
 /*
@@ -96,12 +97,14 @@ body.dark header a:hover {
 .logoPc {
   width: 4%;
 }
+
 .cls-1 {
   fill: none;
   stroke: var(--Logo1-color);
   stroke-miterlimit: 10;
   stroke-width: 16.4px;
 }
+
 .cls-2 {
   fill: var(--Logo1-color);
   stroke-width: 0;
@@ -145,6 +148,8 @@ header ul li a:hover {
 }
 
 /* Estilo menu Inicio - a -------------------------------------- */
+
+
 
 .menuitem {
   position: relative;
@@ -213,11 +218,13 @@ body.dark .content h2 {
 body.dark .content h1 {
   color: var(--primary-color);
 }
+
 /* ------------------------------------------------------------------------------------------------------------------------------------------- */
 
-.colortxt p{
+.colortxt p {
   color: var(--dark-color);
 }
+
 .content h2 p {
   font-size: 1.1em;
   color: var(--ya-color);
@@ -233,105 +240,203 @@ body.dark .content p {
 /* Card  --------------------------------------------------------------------------------------------- */
 
 .card {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    background-color: #242824;
-    padding: 10px;
-    border-radius: 6px;
-    gap: 0.5rem;
-    height: max-content;
-  }
-  .card_form {
-    position: relative;
-    width: 15em;
-    height: 15em;
-    border-radius: 4px;
-    background-color: #9147ff;
-    transition: 0.2s ease-in-out;
-    overflow: hidden;
-  }
-  .card_form span {
-    font-size: 1.5em;
-    position: absolute;
-    inset: 0;
-    padding: 5px 10px;
-    color: #fff;
-    background-image: linear-gradient(
-      to top,
-      rgba(0, 0, 0, 0) 0%,
-      rgba(0, 0, 0, 0.7) 100%
-    );
-    opacity: 0;
-    transition: all 0.2s ease-in-out;
-  }
-  .card:hover .card_form span,
-  .card:hover .card_data span {
-    opacity: 1;
-  }
-  .card_data {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .card_data span {
-    color: #9147ff;
-    display: flex;
-    align-items: center;
-    font-size: 0.9em;
-    transition: 0.2s ease-in-out;
-    opacity: 0;
-    cursor: pointer;
-  }
-  .card_data span:hover {
-    text-decoration: underline;
-  }
-  .text {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    color: white;
-  }
-  .text_m {
-    font-size: 0.9em;
-  }
-  .text_s {
-    color: #9147ff;
-    font-size: 0.6em;
-  }
-  .cube {
-    width: max-content;
-    height: 10px;
-    transition: all 0.2s;
-    transform-style: preserve-3d;
-  }
-  .card:hover .cube {
-    transform: rotateX(90deg);
-  }
-  .side {
-    width: max-content;
-    height: 1em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    font-weight: bold;
-  }
-  .top {
-    transform: rotateX(-90deg) translate3d(0, 0, 0em);
-  }
-  .front {
-    transform: translate3d(0, 0, 1em);
-  }
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #242824;
+  padding: 10px;
+  border-radius: 6px;
+  gap: 0.5rem;
+  height: max-content;
+}
 
-  /* Parrafo de componente catent Inicio --------------------------------------------------------------------------------------------- */
-  
-  .marpar {
-    margin: 0px 0px 30px 0px;
-  }
+.card_form {
+  position: relative;
+  width: 15em;
+  height: 15em;
+  border-radius: 4px;
+  background-color: #9147ff;
+  transition: 0.2s ease-in-out;
+  overflow: hidden;
+}
+
+.card_form span {
+  font-size: 1.5em;
+  position: absolute;
+  inset: 0;
+  padding: 5px 10px;
+  color: #fff;
+  background-image: linear-gradient(to top,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.7) 100%);
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.card:hover .card_form span,
+.card:hover .card_data span {
+  opacity: 1;
+}
+
+.card_data {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card_data span {
+  color: #9147ff;
+  display: flex;
+  align-items: center;
+  font-size: 0.9em;
+  transition: 0.2s ease-in-out;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.card_data span:hover {
+  text-decoration: underline;
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+}
+
+.text_m {
+  font-size: 0.9em;
+}
+
+.text_s {
+  color: #9147ff;
+  font-size: 0.6em;
+}
+
+.cube {
+  width: max-content;
+  height: 10px;
+  transition: all 0.2s;
+  transform-style: preserve-3d;
+}
+
+.card:hover .cube {
+  transform: rotateX(90deg);
+}
+
+.side {
+  width: max-content;
+  height: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: bold;
+}
+
+.top {
+  transform: rotateX(-90deg) translate3d(0, 0, 0em);
+}
+
+.front {
+  transform: translate3d(0, 0, 1em);
+}
+
+/* Parrafo de componente catent Inicio --------------------------------------------------------------------------------------------- */
+
+.marpar {
+  margin: 0px 0px 30px 0px;
+}
+
 /* Parrafo de componente catent Fin  --------------------------------------------------------------------------------------------- */
 
+
+/* lOADER SERVICIOS fin - a  -------------------------------------- */
+.loader {
+  color: var(--dark-color);
+  font-weight: 500;
+  font-size: 99px;
+  box-sizing: content-box;
+  height: 138px;
+  padding: 12px 66px;
+  display: flex;
+  justify-content: center;
+  border-radius: 48px;
+}
+
+body.dark .loader {
+  color: var(--primary-color);
+}
+
+.words {
+  overflow: hidden;
+  position: relative;
+}
+
+.words::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(var(--bg-color) 10%,
+      transparent 30%,
+      transparent 70%,
+      var(--bg-color) 90%);
+  z-index: 20;
+}
+
+.word {
+  display: block;
+  height: 100%;
+  padding-left: 6px;
+  color: var(--Logo1-color);
+  animation: spin_4991 4s infinite;
+}
+
+@keyframes spin_4991 {
+  10% {
+    -webkit-transform: translateY(-102%);
+    transform: translateY(-102%);
+  }
+
+  25% {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+
+  35% {
+    -webkit-transform: translateY(-202%);
+    transform: translateY(-202%);
+  }
+
+  50% {
+    -webkit-transform: translateY(-200%);
+    transform: translateY(-200%);
+  }
+
+  60% {
+    -webkit-transform: translateY(-302%);
+    transform: translateY(-302%);
+  }
+
+  75% {
+    -webkit-transform: translateY(-300%);
+    transform: translateY(-300%);
+  }
+
+  85% {
+    -webkit-transform: translateY(-402%);
+    transform: translateY(-402%);
+  }
+
+  100% {
+    -webkit-transform: translateY(-400%);
+    transform: translateY(-400%);
+  }
+}
+
+/* lOADER SERVICIOS fin - a  -------------------------------------- */
 
 /* Button uno -------------------------------------- */
 
@@ -433,20 +538,21 @@ body.dark .sci h3 {
 .images .imgBx {
   position: relative;
   width: 50%;
-  background-image: url('img/num_4.jpg');
+  background-image: url('img/num_4.svg');
   background-size: cover;
+  height: 50vh;
   /* background: var(--Logo1-color); */
 }
 
 
 .images .imgBx:nth-child(2) {
-  background-image: url('img/num_2.jpg');
+  background-image: url('img/num_1.svg');
   background-size: cover;
 }
 
 .images .imgBx:nth-child(3) {
   width: 100%;
-  background-image: url('img/num_3.png');
+  background-image: url('img/num_2.svg');
   background-size: cover;
 }
 
@@ -513,7 +619,7 @@ body.dark .sci h3 {
 
 .footer {
   background: var(--primary-color);
-  padding: 3rem;
+  padding: 2rem;
   width: 100%;
 }
 
@@ -532,7 +638,28 @@ body.dark .inner-footer {
   color: var(--primary-color);
 }
 
+/* 😶 Main -------------------------------------- */
+main {
+  margin: auto;
+  padding: 1rem;
+  width: 800px;
+  max-width: calc(100% - 2rem);
+  color: #1a1850;
+  font-size: 20px;
+  line-height: 1.6;
+}
 
+.astro-a {
+  position: absolute;
+  top: -32px;
+  left: 50%;
+  transform: translatex(-50%);
+  width: 220px;
+  height: auto;
+  z-index: -1;
+}
+
+/* 😶 main fin -------------------------------------- */
 
 /* 😶‍🌫️ Select 2 -------------------------------------- */
 
@@ -597,7 +724,7 @@ body.dark .card1 {
   .content {
     position: 40px;
   }
-  
+
   .banner .box .content {
     height: 70vh;
   }
@@ -639,5 +766,16 @@ body.dark .card1 {
 
   .images .imgBx .imge {
     width: 100%;
+  }
+
+  .loader {
+    color: var(--dark-color);
+    font-weight: 500;
+    font-size: 37px;
+    box-sizing: content-box;
+    height: 65px;
+    padding: 12px 0px;
+    display: flex;
+    border-radius: 48px;
   }
 }

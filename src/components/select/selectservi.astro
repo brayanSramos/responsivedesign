@@ -1,0 +1,24 @@
+---
+import Card from "../card/cardservi.astro";
+import "../../style/global.css";
+---
+
+<div>
+  <h4 class="titels"></h4>
+  <div class="link-card-grid">
+    <Card />
+  </div>
+</div>
+
+<style>
+  .titels {
+    text-align: center;
+    font-size: 6rem;
+  }
+  .link-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+    gap: 2rem;
+    padding: 0;
+  }
+</style>
