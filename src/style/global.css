@@ -15,6 +15,14 @@
   --button_radius: 0.75em;
   --button_color: var(--primary-color);
   --button_outline_color: var(--Logo1-color);
+
+  /* Variables para tamaños*/
+  --spacing-s: 8px;
+  --spacing-m: 16px;
+  --spacing-l: 24px;
+  --spacing-xl: 32px;
+  --spacing-xxl: 64px;
+  --width-container: 1200px;
 }
 
 @font-face {
@@ -237,7 +245,7 @@ body.dark .content p {
 }
 
 
-/* Card  --------------------------------------------------------------------------------------------- */
+/* Card servico --------------------------------------------------- 
 
 .card {
   position: relative;
@@ -245,7 +253,7 @@ body.dark .content p {
   flex-direction: column;
   background-color: #242824;
   padding: 10px;
-  border-radius: 6px;
+  border-radius: 12px;
   gap: 0.5rem;
   height: max-content;
 }
@@ -254,7 +262,7 @@ body.dark .content p {
   position: relative;
   width: 15em;
   height: 15em;
-  border-radius: 4px;
+  border-radius: 6px;
   background-color: #9147ff;
   transition: 0.2s ease-in-out;
   overflow: hidden;
@@ -343,6 +351,9 @@ body.dark .content p {
 .front {
   transform: translate3d(0, 0, 1em);
 }
+  */
+
+/* Card servico fin --------------------------------------------------- */
 
 /* Parrafo de componente catent Inicio --------------------------------------------------------------------------------------------- */
 
@@ -642,7 +653,7 @@ body.dark .inner-footer {
 main {
   margin: auto;
   padding: 1rem;
-  width: 800px;
+  width: 1000px;
   max-width: calc(100% - 2rem);
   color: #1a1850;
   font-size: 20px;
