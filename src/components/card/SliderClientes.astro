@@ -1,0 +1,103 @@
+---
+
+---
+<h4 class="titels">Clientes</h4>
+<div class="slider">
+    <div class="slide-track">
+      <div class="slide"><img src="img/1.png" alt="">
+      </div>
+      <div class="slide"><img src="img/2.png" alt="">
+      </div>
+      <div class="slide"><img src="img/3.png" alt="">
+      </div>
+      <div class="slide"><img src="img/4.png" alt="">
+      </div>
+      <div class="slide"><img src="img/5.png" alt="">
+      </div>
+  
+      <div class="slide"><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fpt.m.wikipedia.org%2Fwiki%2FFicheiro%3ACoca-Cola_logo.svg&psig=AOvVaw3dPrqOsSn8BvmtIPf3BA7r&ust=1678971379860000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCJD52vf93f0CFQAAAAAdAAAAABAE" alt="">
+      </div>
+      <div class="slide"><img src="img/2.png" alt="">
+      </div>
+      <div class="slide"><img src="img/3.png" alt="">
+      </div>
+      <div class="slide"><img src="img/4.png" alt="">
+      </div>
+      <div class="slide"><img src="img/5.png" alt="">
+      </div>
+    </div>
+  </div>
+
+  <style>
+    .slider {
+  display: flex;
+  height: auto;
+  margin: auto;
+  overflow: hidden;
+  align-items: center;
+}
+
+.slider:before {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  content: "";
+  width: 23.958%;
+  height: 110px;
+  background: linear-gradient(-90deg);
+}
+
+.slider:after {
+  position: absolute;
+  right: 0;
+  content: "";
+  width: 23.958%;
+  height: 110px;
+  background: linear-gradient(
+    90deg
+  );
+}
+
+.slider .slide-track {
+  display: flex;
+  animation: scroll 35s linear infinite;
+  -webkit-animation: scroll 35s linear infinite;
+  width: calc(240px * 10);
+}
+
+.slider .slide {
+  display: flex;
+}
+
+.slider .slide img {
+  width: 180px;
+  height: 80px;
+  padding: 10px;
+  background-color: white;
+  cursor: pointer;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+@keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  100% {
+    -webkit-transform: translateX(calc(-240px * 5));
+    transform: translateX(calc(-240px * 5));
+  }
+}
+
+.titels {
+    text-align: center;
+    font-size: 4rem;
+    color: var(--Logo1-color);
+    padding: 35px;
+  }
+
+  </style>

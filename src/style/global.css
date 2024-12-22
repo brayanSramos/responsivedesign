@@ -67,7 +67,6 @@ body.dark {
   }
   */
 
-
 /* Menu Inicio - a -------------------------------------- */
 header {
   background: var(--primary-500-color);
@@ -226,6 +225,14 @@ body.dark .content h2 {
 body.dark .content h1 {
   color: var(--primary-color);
 }
+body.dark h4 {
+  color: var(--primary-color);
+}
+
+body.dark .titels {
+  color: var(--primary-color);
+}
+
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------- */
 

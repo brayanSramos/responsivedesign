@@ -4,43 +4,38 @@ import CardPorfolio from "../card/cardservicio.astro";
 import "../../style/global.css";
 const allPosts = await Astro.glob("../../content/dev.md");
 ---
-
 <!--select -2-->
+<section class="banners">
 <div>
-  <h4 class="titels"></h4>
+  <h4 class="titels">Nuestros Servicios</h4>
   <div class="card-grid">
     <Card />
     <Card />
     <Card />
-  </div>
-  <p>
-    -----
-  </p>
-  <div class="card-grid">
-    {
-      allPosts.map((item) => (
-        <CardPorfolio
-          title={item?.frontmatter?.title}
-          description={item?.frontmatter?.description}
-          pubDate={item?.frontmatter?.pubDate}
-          image={item?.frontmatter?.image}
-          tags={item?.frontmatter?.tags}
-        />
-      ))
-    }
-  </div>
 </div>
-
+</section>
 <style>
 .card-grid{
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
   grid-column-gap: var(--spacing-l);
   grid-row-gap: var(--spacing-l);
   max-width: var(--width-container);
   width: 100%;
 }
+.banners {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px;
+}
 
+.titels {
+    text-align: center;
+    font-size: 4rem;
+    color: var(--Logo1-color);
+    padding: 35px;
+  }
 @media(min-width: 540px){
   .card-grid{
     grid-template-columns: repeat(2, 1fr); 
@@ -52,9 +47,5 @@ const allPosts = await Astro.glob("../../content/dev.md");
     grid-template-columns: repeat(3, 1fr); 
   }
 }
-  .titels {
-    text-align: center;
-    font-size: 6rem;
-  }
   
 </style>
