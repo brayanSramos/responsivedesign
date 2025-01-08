@@ -1,24 +1,29 @@
 ---
 import "../../style/global.css";
+interface Props {
+  title: string;
+  pubDate: String;
+  description: string;
+  image: string;
+  tags: string[];
+}
+const { title, description, image, tags, pubDate } = Astro.props;
 ---
-
-
-
 <div class="card">
   <div class="card_form">
-    <span>(Topic)</span>
+    <span>{title}</span>
   </div>
   <div class="card_data">
     <div style="display: flex" class="data">
       <div class="text">
-        <label class="text_m">Main Title</label>
+        <label class="text_m">{description}</label>
         <div class="cube text_s">
-          <label class="side front">Access the list (Topic)</label>
-          <label class="side top">Username-id</label>
+          <label class="side front">{pubDate}</label>
+          <label class="side top">{tags}</label>
         </div>
       </div>
     </div>
-    <span title="Acceder a la lista (Temas)">Access</span>
+    <span title="Acceder a la lista (Temas)">Más Info</span>
   </div>
 </div>
 

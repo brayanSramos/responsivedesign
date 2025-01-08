@@ -1,7 +1,7 @@
 ---
 title: 'Marketing'
-pubDate: 2024-03-21
-description: 'Servicios de Marketing'
+pubDate: 'Responsive Design'
+description: 'Marketing Redes'
 image: 
 tags: ["redes sociles"]
 ---

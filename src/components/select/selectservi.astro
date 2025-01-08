@@ -2,18 +2,29 @@
 import Card from "../card/cardservi.astro";
 import CardPorfolio from "../card/cardservicio.astro";
 import "../../style/global.css";
-const allPosts = await Astro.glob("../../content/dev.md");
+const allPosts = await Astro.glob("../../content/*.md");
 ---
 <!--select -2-->
 <section class="banners">
 <div>
   <h4 class="titels">Nuestros Servicios</h4>
   <div class="card-grid">
-    <Card />
-    <Card />
-    <Card />
+    {
+      allPosts.map((item) => (
+        <Card
+          title={item?.frontmatter?.title}
+          description={item?.frontmatter?.description}
+          pubDate={item?.frontmatter?.pubDate}
+          image={item?.frontmatter?.image}
+          tags={item?.frontmatter?.tags}
+        />
+      ))
+    }
 </div>
 </section>
+
+
+
 <style>
 .card-grid{
   display: grid;
