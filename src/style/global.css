@@ -556,13 +556,11 @@ body.dark .sci h3 {
 .images .imgBx {
   position: relative;
   width: 50%;
-  background-image: url('img/num_4.svg');
+  background-image: url('img/num_1.svg');
   background-size: cover;
-  height: 50vh;
-  /* background: var(--Logo1-color); */
+  width: 100%;
 }
-
-
+/* background: var(--Logo1-color); 
 .images .imgBx:nth-child(2) {
   background-image: url('img/num_1.svg');
   background-size: cover;
@@ -573,7 +571,7 @@ body.dark .sci h3 {
   background-image: url('img/num_2.svg');
   background-size: cover;
 }
-
+*/
 .images .imgBx .imge {
   position: absolute;
   top: 0;
