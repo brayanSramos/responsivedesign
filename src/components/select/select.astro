@@ -2,7 +2,7 @@
 import Card from "../card/Card.astro";
 import Content from "../card/content.astro";
 import "../../style/global.css";
-const allPosts = await Astro.glob("../../content/dev.md");
+const allPosts = await Astro.glob("../../content/infoCardRD.md");
 ---
 
 <!--select -2-->
@@ -12,8 +12,6 @@ const allPosts = await Astro.glob("../../content/dev.md");
       <Card
         title={item?.frontmatter?.title}
         description={item?.frontmatter?.description}
-        pubDate={item?.frontmatter?.pubDate}
-        image={item?.frontmatter?.image}
         tags={item?.frontmatter?.tags}
       />
     ))
