@@ -16,5 +16,14 @@ const allPosts = await Astro.glob("../../content/infoIncio/infoCardRD.md");
       />
     ))
   }
-  <Content />
+  {
+    allPosts.map((item) => (
+      <Content
+        title_Inf={item?.frontmatter?.title_Inf}
+        description_Inf={item?.frontmatter?.description_Inf}
+        tags_Inf={item?.frontmatter?.tags_Inf}
+      />
+    ))
+  }
+
 </section>
