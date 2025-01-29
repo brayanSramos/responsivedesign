@@ -21,6 +21,11 @@ const allPosts = await Astro.glob("../../content/*.md");
       ))
     }
 </div>
+<div class="sepat">
+  <button>
+    <span class="button_top">Más Información</span>
+  </button>
+</div>
 </section>
 
 
@@ -47,6 +52,14 @@ const allPosts = await Astro.glob("../../content/*.md");
     color: var(--Logo1-color);
     padding: 35px;
   }
+
+  .sepat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+  }
+
 @media(min-width: 540px){
   .card-grid{
     grid-template-columns: repeat(2, 1fr); 
