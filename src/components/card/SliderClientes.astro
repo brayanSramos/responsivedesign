@@ -1,35 +1,19 @@
 ---
+interface Props {
+  title: string;
+  images: string[];
+}
 
+const { title, images } = Astro.props;
 ---
 <h4 class="titels">Clientes</h4>
 <div class="slider">
     <div class="slide-track">
-      <div class="slide"><img src="img/num_3.jpg" alt="">
-      </div>
-      <div class="slide"><img src="img/num_3.jpg" alt="">
-      </div>
-      <div class="slide"><img src="img/num_2.jpg" alt="">
-      </div>
-      <div class="slide"><img src="img/num_3.jpg" alt="">
-      </div>
-      <div class="slide"><img src="img/num_2.jpg" alt="">
-      </div>
-  
-      <div class="slide"><img src="img/num_2.jpg" alt="">
-      </div>
-      <div class="slide"><img src="img/num_2.jpg" alt="">
-      </div>
-      <div class="slide"><img src="img/num_2.jpg" alt="">
-      </div>
-      <div class="slide"><img src="img/num_2.jpg" alt="">
-      </div>
-      <div class="slide"><img src="img/num_2.jpg" alt="">
-      </div>
-    </div>
+    </div> 
   </div>
+<style>
 
-  <style>
-    .slider {
+.slider {
   display: flex;
   height: auto;
   margin: auto;

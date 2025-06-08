@@ -2,7 +2,7 @@
 import Card from "../card/cardCont.astro";
 import Content from "../card/content.astro";
 import "../../style/global.css";
-const allPosts = await Astro.glob("../../content/dev.md");
+const allPosts = await Astro.glob("../../content/infoIncio/queHacemosRD.md");
 ---
 
 <!--select -2-->
@@ -18,5 +18,14 @@ const allPosts = await Astro.glob("../../content/dev.md");
       />
     ))
   }
-  <Content title_Inf="Portfolio" description_Inf="Nuestro proprietor inicia tu idea con todos los recursos graficos y correcto para la imagen de tu negocio " />
+  {
+    allPosts.map((item) => (
+      <Content
+        title_Inf={item?.frontmatter?.title_Inf}
+        description_Inf={item?.frontmatter?.description_Inf}
+        tags_Inf={item?.frontmatter?.tags_Inf}
+        boots={item?.frontmatter?.boots}
+      />
+    ))
+  }
 </section>

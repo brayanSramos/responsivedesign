@@ -6,8 +6,12 @@ const allPosts = await Astro.glob("../../content/*.md");
 ---
 <!--select -2-->
 <section class="banners">
-<div>
+  
   <h4 class="titels">Nuestros Servicios</h4>
+  <div class="card-texs">
+  <p class="description">Ofrecemos un amplio portafolio de servicios diseñados para el crecimiento de su empresa y la proyección de una imagen profesional y moderna.</p>
+  </div>
+  <div>
   <div class="card-grid">
     {
       allPosts.map((item) => (
@@ -38,6 +42,13 @@ const allPosts = await Astro.glob("../../content/*.md");
   max-width: var(--width-container);
   width: 100%;
 }
+.card-texs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 45px;
+}
 .banners {
   display: flex;
   justify-content: center;
@@ -50,7 +61,13 @@ const allPosts = await Astro.glob("../../content/*.md");
     text-align: center;
     font-size: 4rem;
     color: var(--Logo1-color);
-    padding: 35px;
+    padding: 25px;
+  }
+  .description {
+    text-align: center;
+    font-size: 1rem;
+    color: var(--secundary-color);
+    width: 55%;
   }
 
   .sepat {

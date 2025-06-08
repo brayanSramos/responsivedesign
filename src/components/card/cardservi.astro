@@ -11,6 +11,7 @@ const { title, description, image, tags, pubDate } = Astro.props;
 ---
 <div class="card">
   <div class="card_form">
+    <img src={image} alt="{title}" />
     <span>{title}</span>
   </div>
   <div class="card_data">
@@ -23,7 +24,7 @@ const { title, description, image, tags, pubDate } = Astro.props;
         </div>
       </div>
     </div>
-    <span title="Acceder a la lista (Temas)">Más Info</span>
+    <span title="Acceder a la lista (Temas)">Más-Info</span>
   </div>
 </div>
 
@@ -42,11 +43,8 @@ const { title, description, image, tags, pubDate } = Astro.props;
   .card_form {
     position: relative;
     width: auto;
-    height: 15em;
+    height: auto;
     border-radius: 6px;
-
-    background-color: #9147ff;
-    
     transition: 0.2s ease-in-out;
     overflow: hidden;
   }

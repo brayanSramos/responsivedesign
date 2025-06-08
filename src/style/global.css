@@ -238,6 +238,7 @@ body.dark .titels {
 
 .colortxt p {
   color: var(--dark-color);
+  text-align: justify;
 }
 
 .content h2 p {
