@@ -67,7 +67,7 @@ const allPosts = await Astro.glob("../../content/*.md");
     text-align: center;
     font-size: 1rem;
     color: var(--secundary-color);
-    width: 55%;
+    width: auto;
   }
 
   .sepat {
@@ -87,6 +87,8 @@ const allPosts = await Astro.glob("../../content/*.md");
   .card-grid{
     grid-template-columns: repeat(3, 1fr); 
   }
+    .description {
+    width: 50%;
+  }
 }
-  
 </style>
