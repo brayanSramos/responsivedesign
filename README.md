@@ -1,6 +1,6 @@
 # Web Responsive Design
 
-![just-the-basics](https://github.com/brayanSramos/responsivedesign/blob/main/public/web.png)
+![just-the-basics](https://github.com/brayanSramos/responsivedesign/blob/main/public/web.webp)
 
  <p align="center">
  <img width="400px" src="https://github.com/brayanSramos/brayanSramos/blob/main/braynramos.gif" align="center" alt="BraynSramosAnimacion" />
