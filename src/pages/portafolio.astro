@@ -1,23 +1,18 @@
 ---
 import Header from "../components/header.astro";
 import Footer from "../components/footer.astro";
-import SelectDW from "../components/select/servicios/sectDW.astro";
-import SelectDG from "../components/select/servicios/sectDG.astro";
-import SelectFI from "../components/select/servicios/sectFI.astro";
-import SelectMD from "../components/select/servicios/sectMD.astro";
+import Card from "../components/card/Card.astro";
+import Selectservi from "../components/select/selectservi.astro";
 import Layout from "../layouts/Layout.astro";
 import "../style/global.css";
+import Content from "../components/card/cardservicio.astro";
 
 const allPosts = await Astro.glob("../content/*.md");
 ---
 
-<Layout title="Responsive Design | Servicios">
+<Layout title="Responsive Design">
   <Header />
   <main>
-    <SelectDW />
-    <SelectDG />
-    <SelectFI />
-    <SelectMD />
   </main>
   <Footer />
 </Layout>

@@ -1,5 +1,5 @@
 ---
-title: 'Fotografía & Video'
+title: 'Fotografía | Imagen Corporativa'
 pubDate: 'clientes con una imagen'
 description: 'Impacta a tus'
 image: "../../../public/img/fot.webp"

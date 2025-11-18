@@ -2,12 +2,15 @@
 import "../style/global.css";
 import Logo from "../components/icon/logoRd.astro";
 import logow from "../../public/img/icon/iconWh.svg";
+import { menuItems } from "../menu/navigation.js";
 ---
 
 <section class="zona1">
   <header>
     <!--  <img src={logo.src} alt="logo" class="logoPc" /> -->
-    <Logo class="logoPc" />
+    <a href="/" class="logoPc">
+      <Logo />
+    </a>
     <!-- Menu movil y Logo en SVG-->
     <div class="container">
       <input id="toggle" type="checkbox" />
@@ -17,10 +20,9 @@ import logow from "../../public/img/icon/iconWh.svg";
       </label>
 
       <nav class="nav">
-        <a class="nav-item" href="">Servicios</a>
-        <a class="nav-item" href="">Portafolio</a>
-        <a class="nav-item" href="">Clientes</a>
-        <a class="nav-item" href="">Contacto</a>
+        { menuItems.map((item) => (
+          <a class="nav-item" href={item.href}>{item.name}</a>
+        ))}
       </nav>
     </div>
     <dir class="logoMovil">
@@ -30,11 +32,12 @@ import logow from "../../public/img/icon/iconWh.svg";
 
     <!-- Menu pc y Logo en SVG-->
     <nav>
+        {menuItems.map((item) => (
+        <ul>
+          <li><a class="menuitem" href={item.href}>{item.name}</a></li>
+        </ul>
+       ))}
       <ul>
-        <li><a class="menuitem" href="/">Servicios</a></li>
-        <li><a class="menuitem" href="#">Portafolio</a></li>
-        <li><a class="menuitem" href="#">Clientes</a></li>
-        <li><a class="menuitem" href="#">Contacto</a></li>
         <li>
           <button class="switch" id="switch">
             <span><img class="imgls" src="img/icon/sol.svg" alt="" /></span>
