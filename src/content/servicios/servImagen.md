@@ -1,10 +1,10 @@
 ---
-title: '👨‍💻 Responsive Design'
-description: 'Donde la Creatividad Encuentra su Hogar'
-tags: 'Creamos experiencias digitales que cautivan y conectan.'
+title: '{📸⭐} Fotografía | Imagen Corporativa'
+description: 'Enfocada en Percepción y Valor'
+tags: 'La Imagen que tu Marca Merece.'
 
-title_Inf: 'dos puentos aparte'
-description_Inf: 'Nuestro Proposito inicia tu idea con todos los recursos graficos y correcto para la imagen de tu negocio'
+title_Inf: 'Comunica Valor, Genera Confianza.'
+description_Inf: 'Fotografía profesional que eleva la percepción de tu empresa.'
 tags_Inf: 'Creamos'
-boots: 'Más Información'
+boots: 'Potencia Tu Imagen'
 --- 

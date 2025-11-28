@@ -1,10 +1,9 @@
 ---
-title: '👨‍💻 Responsive Design'
-description: 'Donde la Creatividad Encuentra su Hogar'
-tags: 'Creamos experiencias digitales que cautivan y conectan.'
-
-title_Inf: 'dos puentos aparte'
-description_Inf: 'Nuestro Proposito inicia tu idea con todos los recursos graficos y correcto para la imagen de tu negocio'
+title: '{✍️} Diseño Grafico'
+description: 'Enfocada en Identidad y Reconocimiento'
+tags: 'Diseño con Propósito Comercial.'
+title_Inf: 'Haz que tu Marca sea Inolvidable.'
+description_Inf: 'Desarrollamos la identidad visual que hace reconocible y única a tu marca.'
 tags_Inf: 'Creamos'
-boots: 'Más Información'
+boots: 'Diseña tu Identidad'
 --- 

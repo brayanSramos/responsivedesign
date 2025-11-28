@@ -53,8 +53,8 @@ body.dark {
 
 .banner .box {
   position: relative;
-  height: 80vh;
-  /* height: 100vh; */
+  height: 100vh;
+  /* height: 80vh; */
 }
 
 /*
@@ -80,6 +80,10 @@ header {
   align-items: center;
   z-index: 10;
   transition: 0.7s;
+}
+
+h3{
+  color:#1a1850;
 }
 
 header.abajo {
@@ -657,10 +661,12 @@ body.dark .inner-footer {
 
 /* 😶 Main -------------------------------------- */
 main {
+  /*
   margin: auto;
   padding: 1rem;
   width: 1000px;
   max-width: calc(100% - 2rem);
+  */
   color: #1a1850;
   font-size: 20px;
   line-height: 1.6;

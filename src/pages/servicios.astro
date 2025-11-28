@@ -5,6 +5,7 @@ import SelectDW from "../components/select/servicios/sectDW.astro";
 import SelectDG from "../components/select/servicios/sectDG.astro";
 import SelectFI from "../components/select/servicios/sectFI.astro";
 import SelectMD from "../components/select/servicios/sectMD.astro";
+import SelectInicio from "../components/select/servicios/sectIncio.astro";
 import Layout from "../layouts/Layout.astro";
 import "../style/global.css";
 
@@ -13,16 +14,13 @@ const allPosts = await Astro.glob("../content/*.md");
 
 <Layout title="Responsive Design | Servicios">
   <Header />
-  <main>
+    <SelectInicio />
     <SelectDW />
     <SelectDG />
     <SelectFI />
     <SelectMD />
-  </main>
   <Footer />
 </Layout>
-
-<style></style>
 
 <script>
   const btnSwitch = document.querySelector("#switch");

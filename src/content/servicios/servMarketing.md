@@ -1,10 +1,10 @@
 ---
-title: '👨‍💻 Responsive Design'
-description: 'Donde la Creatividad Encuentra su Hogar'
-tags: 'Creamos experiencias digitales que cautivan y conectan.'
+title: '{🤖} Marketing Digital'
+description: 'Enfocada en Crecimiento e Impacto'
+tags: 'Acelera tu Crecimiento Online'
 
-title_Inf: 'dos puentos aparte'
-description_Inf: 'Nuestro Proposito inicia tu idea con todos los recursos graficos y correcto para la imagen de tu negocio'
+title_Inf: 'Tráfico, Conversiones y Resultados'
+description_Inf: 'Transformamos clicks en clientes leales y ingresos recurrentes.'
 tags_Inf: 'Creamos'
-boots: 'Más Información'
+boots: 'Acelera tu Crecimiento'
 --- 

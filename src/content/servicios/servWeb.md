@@ -1,10 +1,10 @@
 ---
-title: '👨‍💻 Responsive Design'
-description: 'Donde la Creatividad Encuentra su Hogar'
-tags: 'Creamos experiencias digitales que cautivan y conectan.'
+title: '{🧑‍💻} Desarrollo web'
+description: 'Más que un Sitio Web, una Experiencia Digital'
+tags: 'JavaScript, TimeScript, Python, React, Astro'
 
-title_Inf: 'dos puentos aparte'
-description_Inf: 'Nuestro Proposito inicia tu idea con todos los recursos graficos y correcto para la imagen de tu negocio'
+title_Inf: 'Desarrolla tu Proyecto Digital.'
+description_Inf: 'Creamos sitios web a medida, rápidos y seguros, que convierten visitantes en clientes. Diseñamos la experiencia digital perfecta para tu marca.'
 tags_Inf: 'Creamos'
-boots: 'Más Información'
+boots: 'Desarrolla tu Proyecto'
 --- 
