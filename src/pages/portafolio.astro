@@ -1,18 +1,17 @@
 ---
 import Header from "../components/header.astro";
 import Footer from "../components/footer.astro";
-import Card from "../components/card/Card.astro";
-import Selectservi from "../components/select/selectservi.astro";
+import SelectProf from "../components/select/portafolio/sectInicio.astro";
 import Layout from "../layouts/Layout.astro";
 import "../style/global.css";
-import Content from "../components/card/cardservicio.astro";
 
 const allPosts = await Astro.glob("../content/*.md");
 ---
 
-<Layout title="Responsive Design">
+<Layout title="Responsive Design | Portafolio">
   <Header />
   <main>
+    <SelectProf />
   </main>
   <Footer />
 </Layout>

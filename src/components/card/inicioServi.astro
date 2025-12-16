@@ -1,33 +1,33 @@
 ---
 import "../../style/global.css";
 interface Props {
-    txt3: string;
-    descrip3: string;
-    txt4: string;
-    descrip4: string;
-    tasgInico: string[];
+  txt3: string;
+  descrip3: string;
+  txt4: string;
+  descrip4: string;
+  tasgInico: string[];
 }
 const { txt3, txt4, descrip3, descrip4, tasgInico } = Astro.props;
 ---
 
-  <div class="box content">
-    <div class="colortxt flex flex-col gap-4 md:gap-2">
-      <h1 class="text-7xl md:text-8xl text-violet-900 ">{txt3}</h1>
-      <p class="text-4xl md:text-5xl">{descrip3}</p>
-    </div>
+<!-- Texto - H1 -->
+<div class="box content">
+  <div class="colortxt flex flex-col gap-4 md:gap-2">
+    <h1 class="text-7xl md:text-8xl text-violet-900">{txt3}</h1>
+    <p class="text-4xl md:text-5xl">{descrip3}</p>
   </div>
-  <div class="boxdiv images">
-    
-    <div class="imgBx">
-      <div class="contentimg">
-        <div class="colortxt space-y-4 max-w-prose">
-              <h3 class="text-3xl md:text-4xl font-semibold">{txt4}</h3>
-            <p class="text-base md:text-lg">{descrip4}</p>
-          </div>
+</div>
+<!-- Imagen y texto -->
+<div class="boxdiv images">
+  <div class="imgBx">
+    <div class="contentimg">
+      <div class="colortxt space-y-4 max-w-prose">
+        <h3 class="text-3xl md:text-4xl font-semibold">{txt4}</h3>
+        <p class="text-base md:text-lg">{descrip4}</p>
       </div>
     </div>
   </div>
-
+</div>
 <style>
   .contentimg {
     display: flex;
@@ -37,7 +37,7 @@ const { txt3, txt4, descrip3, descrip4, tasgInico } = Astro.props;
     height: 100%;
   }
 
-  .contentimg h1  {
+  .contentimg h1 {
     font-family: Light-Italic;
     font-size: 4em;
     color: var(--Logo1-color);

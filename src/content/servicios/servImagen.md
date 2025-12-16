@@ -1,5 +1,5 @@
 ---
-title: '{📸⭐} Fotografía | Imagen Corporativa'
+title: '{📸} Fotografía | Imagen Corporativa'
 description: 'Enfocada en Percepción y Valor'
 tags: 'La Imagen que tu Marca Merece.'
 
