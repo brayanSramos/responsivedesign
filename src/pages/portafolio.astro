@@ -2,6 +2,8 @@
 import Header from "../components/header.astro";
 import Footer from "../components/footer.astro";
 import SelectProf from "../components/select/portafolio/sectInicio.astro";
+import SectLogofolio from "../components/select/portafolio/sectLogofolio.astro";
+import SectProyct from "../components/select/portafolio/sectProyct.astro";
 import Layout from "../layouts/Layout.astro";
 import "../style/global.css";
 
@@ -12,6 +14,8 @@ const allPosts = await Astro.glob("../content/*.md");
   <Header />
   <main>
     <SelectProf />
+    <SectLogofolio />
+    <SectProyct />
   </main>
   <Footer />
 </Layout>

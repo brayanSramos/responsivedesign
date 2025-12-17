@@ -1,0 +1,79 @@
+---
+import CardLogofolio from "../../../components/card/cardLogofolio.astro";
+import "../../../style/global.css";
+
+const allPosts = await Astro.glob("../../../content/portafolio/imgPf.md");
+---
+
+<section class="bannerPorf">
+    {
+        allPosts.map((item) => (
+            <CardLogofolio
+                txt={item?.frontmatter?.txt}
+                txtImg={item?.frontmatter?.txtImg}
+                imgprueba={item?.frontmatter?.imgprueba}
+                img={item?.frontmatter?.img}
+                img1={item?.frontmatter?.img1}
+                img2={item?.frontmatter?.img2}
+                img3={item?.frontmatter?.img3}
+                img4={item?.frontmatter?.img4}
+                img5={item?.frontmatter?.img5}
+                img6={item?.frontmatter?.img6}
+                img7={item?.frontmatter?.img7}
+                img8={item?.frontmatter?.img8}
+                img9={item?.frontmatter?.img9}
+                img10={item?.frontmatter?.img10}
+                img11={item?.frontmatter?.img11}
+                img12={item?.frontmatter?.img12}
+                img13={item?.frontmatter?.img13}
+                img14={item?.frontmatter?.img14}
+            />
+        ))
+    }
+</section>
+
+<style>
+    .bannerPorf {
+    }
+    .contentimg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 19%;
+        height: 100%;
+    }
+
+    .contentimg h1 {
+        font-family: Light-Italic;
+        font-size: 4em;
+        color: var(--Logo1-color);
+    }
+
+    body.dark .contentimg h1 {
+        color: var(--primary-color);
+    }
+    body.dark p {
+        color: var(--primary-color);
+    }
+
+    body.dark .contentimg h1 {
+        color: var(--primary-color);
+    }
+    body.dark h3 {
+        color: var(--primary-color);
+    }
+
+    @media (max-width: 600px) {
+        .contentimg {
+            padding: 7%;
+            height: 355px;
+        }
+    }
+    .texstyle1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 9%;
+        height: 354px;
+    }
+</style>

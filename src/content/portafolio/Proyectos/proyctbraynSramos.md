@@ -1,0 +1,15 @@
+---
+txt: "braynSramos"
+txtImg: "Logo BraynSramos por Responsive Disign"
+p: "Proyecto, identidad de la marca y diseño web."
+reto: "Crear una identidad digital que transmitiera profesionalismo, modernidad y confianza para un servicio de diseño gráfico por suscripción."
+solución: "Diseñé una página web minimalista y funcional, inspirada en referencias internacionales, con una identidad visual limpia y coherente con la marca."
+resultado: "Una plataforma clara y atractiva que refleja los valores de Mosst Design, orientada a captar clientes y comunicar de forma directa los beneficios del servicio."
+tipo: "Diseño web"
+tlogo: "Logo"
+button: "Web del Proyctos"
+url: "https://brayansramos.github.io/Profile/"
+img: "../../public/img/imgLogofolio/logo-braynSramos1.1.webp"
+imgicon: "../../public/img/imgLogofolio/logo-braynSramos.webp"
+imgprueba: "../../public/img/num_3.png"
+---

@@ -1,0 +1,224 @@
+---
+import "../../style/global.css";
+interface Props {
+    txt: string;
+    txtImg: string;
+    img: string;
+    img1: string;
+    img2: string;
+    img3: string;
+    img4: string;
+    img5: string;
+    img6: string;
+    img7: string;
+    img8: string;
+    img9: string;
+    img10: string;
+    img11: string;
+    img12: string;
+    img13: string;
+    img14: string;
+    imgprueba: string;
+}
+const {
+    txt,
+    txtImg,
+    img,
+    img1,
+    img2,
+    img3,
+    img4,
+    img5,
+    img6,
+    img7,
+    img8,
+    img9,
+    img10,
+    img11,
+    img12,
+    img13,
+    img14,
+    imgprueba,
+} = Astro.props;
+---
+
+<!-- Imagen y texto -->
+<div class="boxdiv">
+    <div class="content">
+        <div class="max-w-prose">
+            <h1 class="text1 font-bold">{txt}</h1>
+        </div>
+    </div>
+
+    <div class="max-w-6xl mx-auto pb-20">
+        <!-- Grid de logos -->
+        <div
+            class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-10 items-center"
+        >
+            <!-- Logo -->
+            <div class="flex justify-center">
+                <img
+                    src={img}
+                    alt={txtImg}
+                    class="h-30 grayscale hover:grayscale-0 transition"
+                />
+            </div>
+
+            <div class="flex justify-center">
+                <img
+                    src={img1}
+                    alt={txtImg}
+                    class="h-30 grayscale hover:grayscale-0 transition"
+                />
+            </div>
+
+            <div class="flex justify-center">
+                <img
+                    src={img2}
+                    alt={txtImg}
+                    class="h-30 grayscale hover:grayscale-0 transition"
+                />
+            </div>
+
+            <div class="flex justify-center">
+                <img
+                    src={img3}
+                    alt={txtImg}
+                    class="h-30 grayscale hover:grayscale-0 transition"
+                />
+            </div>
+
+            <div class="flex justify-center">
+                <img
+                    src={img4}
+                    alt={txtImg}
+                    class="h-30 grayscale hover:grayscale-0 transition"
+                />
+            </div>
+
+            <div class="flex justify-center">
+                <img
+                    src={img5}
+                    alt={txtImg}
+                    class="h-30 grayscale hover:grayscale-0 transition"
+                />
+            </div>
+
+            <div class="flex justify-center">
+                <img
+                    src={img6}
+                    alt={txtImg}
+                    class="h-30 grayscale hover:grayscale-0 transition"
+                />
+            </div>
+
+            <div class="flex justify-center">
+                <img
+                    src={img7}
+                    alt={txtImg}
+                    class="h-30 grayscale hover:grayscale-0 transition"
+                />
+            </div>
+
+            <div class="flex justify-center">
+                <img
+                    src={img8}
+                    alt={txtImg}
+                    class="h-30 grayscale hover:grayscale-0 transition"
+                />
+            </div>
+
+            <div class="flex justify-center">
+                <img
+                    src={img9}
+                    alt={txtImg}
+                    class="h-30 grayscale hover:grayscale-0 transition"
+                />
+            </div>
+
+            <div class="flex justify-center">
+                <img
+                    src={img10}
+                    alt={txtImg}
+                    class="h-30 grayscale hover:grayscale-0 transition"
+                />
+            </div>
+
+            <div class="flex justify-center">
+                <img
+                    src={img11}
+                    alt={txtImg}
+                    class="h-30 grayscale hover:grayscale-0 transition"
+                />
+            </div>
+
+            <div class="flex justify-center">
+                <img
+                    src={img12}
+                    alt={txtImg}
+                    class="h-30 grayscale hover:grayscale-0 transition"
+                />
+            </div>
+
+            <div class="flex justify-center">
+                <img
+                    src={img13}
+                    alt={txtImg}
+                    class="h-30 grayscale hover:grayscale-0 transition"
+                />
+            </div>
+
+            <div class="flex justify-center">
+                <img
+                    src={img14}
+                    alt={txtImg}
+                    class="h-30 grayscale hover:grayscale-0 transition"
+                />
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 3%;
+        }
+
+        .content h1 {
+            font-family: Light-Italic;
+            font-size: 4em;
+            font-weight: bold;
+            color: var(--Logo1-color);
+        }
+
+        body.dark .content h1 {
+            color: var(--primary-color);
+        }
+        body.dark p {
+            color: var(--primary-color);
+        }
+
+        body.dark .content h1 {
+            color: var(--primary-color);
+        }
+        body.dark h3 {
+            color: var(--primary-color);
+        }
+
+        @media (max-width: 600px) {
+            .content {
+                padding: 7%;
+                height: 355px;
+            }
+        }
+        .texstyle1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 9%;
+            height: 354px;
+        }
+    </style>
+</div>

@@ -2,13 +2,16 @@
   --primary-color: #fff;
   --primary-500-color: rgba(255, 255, 255, 0.5);
   --primary-700-color: rgba(255, 255, 255, 0.747);
+  --primary-900-color: #E5E7EB;
   --secundary-color: #000;
   --Logo1-color: #550197;
   --Logo1-900-color: #5601979a;
+  --Logo1-400-color: #bb8be09a;
   --Logo2-color: #2a8ae1;
   --dark-color: #1f2937;
   --dark-500-color: rgba(31, 41, 55, 0.5);
   --ya-color: #e0da03;
+  --ya-900-color: rgba(229, 229, 46, 0.9);
   --ro-color: #f82cb2;
 
   /* Variables Button uno */
@@ -82,8 +85,8 @@ header {
   transition: 0.7s;
 }
 
-h3{
-  color:#1a1850;
+h3 {
+  color: #1a1850;
 }
 
 header.abajo {
@@ -229,6 +232,7 @@ body.dark .content h2 {
 body.dark .content h1 {
   color: var(--primary-color);
 }
+
 body.dark h4 {
   color: var(--primary-color);
 }
@@ -565,6 +569,7 @@ body.dark .sci h3 {
   background-size: cover;
   width: 100%;
 }
+
 /* background: var(--Logo1-color); 
 .images .imgBx:nth-child(2) {
   background-image: url('img/num_1.svg');

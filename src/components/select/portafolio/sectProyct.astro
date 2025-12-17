@@ -1,0 +1,54 @@
+---
+import CardProyct from "../../../components/card/cardProyct.astro";
+import "../../../style/global.css";
+
+const allPosts = await Astro.glob("../../../content/portafolio/Proyectos/*.md");
+---
+
+<section class="bannerPorf">
+    <div class="boxdiv">
+        <div class="content">
+            <div class="max-w-prose">
+                <h2 class="font-bold">Proyectos</h2>
+            </div>
+        </div>
+    </div>
+    {
+        allPosts.map((item) => (
+            <CardProyct
+                txt={item?.frontmatter?.txt}
+                txtImg={item?.frontmatter?.txtImg}
+                p={item?.frontmatter?.p}
+                reto={item?.frontmatter?.reto}
+                solución={item?.frontmatter?.solución}
+                resultado={item?.frontmatter?.resultado}
+                tipo={item?.frontmatter?.tipo}
+                imgicon={item?.frontmatter?.imgicon}
+                tlogo={item?.frontmatter?.tlogo}
+                button={item?.frontmatter?.button}
+                url={item?.frontmatter?.url}
+                imgprueba={item?.frontmatter?.imgprueba}
+                img={item?.frontmatter?.img}
+            />
+        ))
+    }
+</section>
+
+<style>
+    .bannerPorf {
+    }
+
+    body.dark h1 {
+        color: var(--primary-color);
+    }
+    body.dark p {
+        color: var(--primary-color);
+    }
+
+    body.dark h1 {
+        color: var(--primary-color);
+    }
+    body.dark h3 {
+        color: var(--primary-color);
+    }
+</style>
