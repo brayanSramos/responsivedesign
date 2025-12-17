@@ -1,0 +1,31 @@
+---
+import CardFotog from "../../card/cardFotog.astro";
+
+const allPosts = await Astro.glob(
+    "../../../content/portafolio/fotografias/*.md",
+);
+---
+
+<section class="bannerPorf">
+    <div class="boxdiv">
+        <div class="content">
+            <div class="max-w-prose">
+                <h2 class="font-bold">Fotografía</h2>
+            </div>
+        </div>
+    </div>
+    {
+        allPosts.map((item) => (
+            <CardFotog
+                title={item?.frontmatter?.title}
+                descripcion={item?.frontmatter?.descripcion}
+                avatar={item?.frontmatter?.avatar}
+                imageprincipal={item?.frontmatter?.imageprincipal}
+                galeria1={item?.frontmatter?.galeria1}
+                galeria2={item?.frontmatter?.galeria2}
+                galeria3={item?.frontmatter?.galeria3}
+                galeria4={item?.frontmatter?.galeria4}
+            />
+        ))
+    }
+</section>
