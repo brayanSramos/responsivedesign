@@ -1,16 +1,31 @@
 ---
 import Card from "../card/SliderClientes.astro";
 import "../../style/global.css";
-const allPosts = await Astro.glob("../../content/imageClientes/*.md" );
+const allPosts = await Astro.glob("../../content/clientes/imgclientes.md");
 ---
 
-<!--select -2-->
-<section class="banner">
+<section class="py-16 overflow-hidden">
   {
     allPosts.map((item) => (
       <Card
         title={item?.frontmatter?.title}
-        images={item?.frontmatter?.images}
+        description={item?.frontmatter?.description}
+        image={item?.frontmatter?.image}
+        image1={item?.frontmatter?.image1}
+        image2={item?.frontmatter?.image2}
+        image3={item?.frontmatter?.image3}
+        image4={item?.frontmatter?.image4}
+        image5={item?.frontmatter?.image5}
+        image6={item?.frontmatter?.image6}
+        image7={item?.frontmatter?.image7}
+        image8={item?.frontmatter?.image8}
+        image9={item?.frontmatter?.image9}
+        image10={item?.frontmatter?.image10}
+        image11={item?.frontmatter?.image11}
+        image12={item?.frontmatter?.image12}
+        image13={item?.frontmatter?.image13}
+        image14={item?.frontmatter?.image14}
+        image15={item?.frontmatter?.image15}
       />
     ))
   }

@@ -1,87 +1,273 @@
 ---
+import "../../style/global.css";
 interface Props {
   title: string;
-  images: string[];
+  description: string;
+  image: string;
+  image1: string;
+  image2: string;
+  image3: string;
+  image4: string;
+  image5: string;
+  image6: string;
+  image7: string;
+  image8: string;
+  image9: string;
+  image10: string;
+  image11: string;
+  image12: string;
+  image13: string;
+  image14: string;
+  image15: string;
 }
 
-const { title, images } = Astro.props;
+const {
+  title,
+  description,
+  image,
+  image1,
+  image2,
+  image3,
+  image4,
+  image5,
+  image6,
+  image7,
+  image8,
+  image9,
+  image10,
+  image11,
+  image12,
+  image13,
+  image14,
+  image15,
+} = Astro.props;
 ---
-<h4 class="titels">Clientes</h4>
-<div class="slider">
-    <div class="slide-track">
-    </div> 
+
+<section class="py-16 overflow-hidden bg-[var(--dark-colorclien)]">
+  <h4 class="titels font-extrabold text-white">{title}</h4>
+
+  <div class="max-w-9xl mx-auto px-6">
+    <h2 class="text-2xl md:text-3xl font-extrabold text-center mb-10">
+      {description}
+    </h2>
   </div>
-<style>
 
-.slider {
-  display: flex;
-  height: auto;
-  margin: auto;
-  overflow: hidden;
-  align-items: center;
-}
+  <!-- Slider -->
+  <div class="relative w-full overflow-hidden">
+    <div class="flex animate-[scroll-with-jump_15s_linear_infinite]">
+      <!-- Logos (duplicados para efecto infinito) -->
+      <div class="flex items-center gap-20 px-8">
+        <ul class="flex items-center space-x-12">
+          <li class="flex-shrink-0">
+            <img
+              src={image}
+              alt="Cliente 1"
+              class="h-20 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
+            />
+          </li>
+          <li class="flex-shrink-0">
+            <img
+              src={image1}
+              alt="Cliente 2"
+              class="h-20 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
+            />
+            <li class="flex-shrink-0">
+              <img
+                src={image2}
+                alt="Cliente 3"
+                class="h-20 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
+              />
+            </li>
+            <li class="flex-shrink-0">
+              <img
+                src={image3}
+                alt="Cliente 4"
+                class="h-20 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
+              />
+              <li class="flex-shrink-0">
+                <img
+                  src={image4}
+                  alt="Cliente 5"
+                  class="h-20 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
+                />
+              </li>
+              <li class="flex-shrink-0">
+                <img
+                  src={image5}
+                  alt="Cliente 6"
+                  class="h-20 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
+                />
+                <li class="flex-shrink-0">
+                  <img
+                    src={image6}
+                    alt="Cliente 7"
+                    class="h-20 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
+                  />
+                </li>
+                <li class="flex-shrink-0">
+                  <img
+                    src={image7}
+                    alt="Cliente 8"
+                    class="h-20 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
+                  />
+                </li>
+                <li class="flex-shrink-0">
+                  <img
+                    src={image8}
+                    alt="Cliente 9"
+                    class="h-20 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
+                  />
+                </li>
+                <li class="flex-shrink-0">
+                  <img
+                    src={image9}
+                    alt="Cliente 10"
+                    class="h-20 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
+                  />
+                  <li class="flex-shrink-0">
+                    <img
+                      src={image10}
+                      alt="Cliente 11"
+                      class="h-20 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
+                    />
+                  </li>
+                  <li class="flex-shrink-0">
+                    <img
+                      src={image11}
+                      alt="Cliente 12"
+                      class="h-20 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
+                    />
+                  </li>
+                  <li class="flex-shrink-0">
+                    <img
+                      src={image12}
+                      alt="Cliente 13"
+                      class="h-20 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
+                    />
+                  </li>
+                  <li class="flex-shrink-0">
+                    <img
+                      src={image13}
+                      alt="Cliente 14"
+                      class="h-20 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
+                    />
+                    <li class="flex-shrink-0">
+                      <img
+                        src={image14}
+                        alt="Cliente 15"
+                        class="h-20 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
+                      />
+                    </li>
+                    <li class="flex-shrink-0">
+                      <img
+                        src={image15}
+                        alt="Cliente 15"
+                        class="h-20 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
+                      />
+                    </li>
+                  </li>
+                </li>
+              </li>
 
-.slider:before {
-  position: absolute;
-  z-index: 1;
-  left: 0;
-  content: "";
-  width: 23.958%;
-  height: 110px;
-  background: linear-gradient(-90deg);
-}
+              <style>
+                .slider {
+                  display: flex;
+                  height: auto;
+                  margin: auto;
+                  overflow: hidden;
+                  align-items: center;
+                }
 
-.slider:after {
-  position: absolute;
-  right: 0;
-  content: "";
-  width: 23.958%;
-  height: 110px;
-  background: linear-gradient(
-    90deg
-  );
-}
+                .slider:before {
+                  position: absolute;
+                  z-index: 1;
+                  left: 0;
+                  content: "";
+                  width: 23.958%;
+                  height: 110px;
+                  background: linear-gradient(-90deg);
+                }
 
-.slider .slide-track {
-  display: flex;
-  animation: scroll 35s linear infinite;
-  -webkit-animation: scroll 35s linear infinite;
-  width: calc(240px * 10);
-}
+                .slider:after {
+                  position: absolute;
+                  right: 0;
+                  content: "";
+                  width: 23.958%;
+                  height: 110px;
+                  background: linear-gradient(90deg);
+                }
 
-.slider .slide {
-  display: flex;
-}
+                .slider .slide-track {
+                  display: flex;
+                  animation: scroll 35s linear infinite;
+                  -webkit-animation: scroll 35s linear infinite;
+                  width: calc(240px * 10);
+                }
 
-.slider .slide img {
-  width: 180px;
-  height: 80px;
-  padding: 10px;
-  background-color: white;
-  cursor: pointer;
-  margin: 20px;
-  border-radius: 8px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-}
+                .slider .slide {
+                  display: flex;
+                }
 
-@keyframes scroll {
-  0% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
+                .slider .slide img {
+                  width: 180px;
+                  height: 80px;
+                  padding: 10px;
+                  background-color: white;
+                  cursor: pointer;
+                  margin: 20px;
+                  border-radius: 8px;
+                  box-shadow:
+                    rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+                    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+                }
 
-  100% {
-    -webkit-transform: translateX(calc(-240px * 5));
-    transform: translateX(calc(-240px * 5));
-  }
-}
+                @keyframes scroll {
+                  0% {
+                    -webkit-transform: translateX(0);
+                    transform: translateX(0);
+                  }
 
-.titels {
-    text-align: center;
-    font-size: 4rem;
-    color: var(--Logo1-color);
-    padding: 35px;
-  }
+                  100% {
+                    -webkit-transform: translateX(calc(-240px * 15));
+                    transform: translateX(calc(-240px * 15));
+                  }
+                }
 
-  </style>
+                .titels {
+                  text-align: center;
+                  font-size: 4rem;
+                  padding: 35px;
+                }
+
+                @keyframes slide {
+                  from {
+                    transform: translateX(10%);
+                  }
+                  to {
+                    transform: translateX(-10%);
+                  }
+                }
+
+                .animate-slide {
+                  animation: slide 25s linear infinite;
+                }
+
+                /* Definimos la animación personalizada para el salto */
+                @keyframes scroll-with-jump {
+                  0% {
+                    /* Comienza en la posición original */
+                    transform: translateX(0);
+                  }
+                  100% {
+                    /* Se mueve completamente hacia la izquierda, fuera de la vista */
+                    transform: translateX(-100%);
+                  }
+                }
+              </style>
+            </li>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

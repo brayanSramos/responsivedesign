@@ -9,6 +9,7 @@
   --Logo1-400-color: #bb8be09a;
   --Logo2-color: #2a8ae1;
   --dark-color: #1f2937;
+  --dark-colorclien: #560197;
   --dark-500-color: rgba(31, 41, 55, 0.5);
   --ya-color: #e0da03;
   --ya-900-color: rgba(229, 229, 46, 0.9);
@@ -20,6 +21,7 @@
   --button_outline_color: var(--Logo1-color);
 
   /* Variables para tamaños*/
+  --spacing-pors: 8%;
   --spacing-s: 8px;
   --spacing-m: 16px;
   --spacing-l: 24px;

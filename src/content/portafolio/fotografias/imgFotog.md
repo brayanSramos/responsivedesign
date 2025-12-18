@@ -7,4 +7,6 @@ galeria1: "../../public/img/fotografias/fot2.jpg"
 galeria2: "../../public/img/fotografias/fot2.jpg"
 galeria3: "../../public/img/fotografias/fot3.jpg"
 galeria4: "../../public/img/fotografias/fot4.jpg"
+url: "https://unsplash.com/es/@braynsramos"
+button: "UNSPLASH"
 ---
