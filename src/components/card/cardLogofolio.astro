@@ -60,7 +60,7 @@ const {
                 <img
                     src={img}
                     alt={txtImg}
-                    class="h-30 grayscale hover:grayscale-0 transition"
+                    class="h-30 object-contain opacity-70 hover:opacity-100 transition-opacity"
                 />
             </div>
 
@@ -68,7 +68,7 @@ const {
                 <img
                     src={img1}
                     alt={txtImg}
-                    class="h-30 grayscale hover:grayscale-0 transition"
+                    class="h-30 object-contain opacity-70 hover:opacity-100 transition-opacity"
                 />
             </div>
 
@@ -76,7 +76,7 @@ const {
                 <img
                     src={img2}
                     alt={txtImg}
-                    class="h-30 grayscale hover:grayscale-0 transition"
+                    class="h-30 object-contain opacity-70 hover:opacity-100 transition-opacity"
                 />
             </div>
 
@@ -84,7 +84,7 @@ const {
                 <img
                     src={img3}
                     alt={txtImg}
-                    class="h-30 grayscale hover:grayscale-0 transition"
+                    class="h-30 object-contain opacity-70 hover:opacity-100 transition-opacity"
                 />
             </div>
 
@@ -92,7 +92,7 @@ const {
                 <img
                     src={img4}
                     alt={txtImg}
-                    class="h-30 grayscale hover:grayscale-0 transition"
+                    class="h-30 object-contain opacity-70 hover:opacity-100 transition-opacity"
                 />
             </div>
 
@@ -100,7 +100,7 @@ const {
                 <img
                     src={img5}
                     alt={txtImg}
-                    class="h-30 grayscale hover:grayscale-0 transition"
+                    class="h-30 object-contain opacity-70 hover:opacity-100 transition-opacity"
                 />
             </div>
 
@@ -108,7 +108,7 @@ const {
                 <img
                     src={img6}
                     alt={txtImg}
-                    class="h-30 grayscale hover:grayscale-0 transition"
+                    class="h-30 object-contain opacity-70 hover:opacity-100 transition-opacity"
                 />
             </div>
 
@@ -116,7 +116,7 @@ const {
                 <img
                     src={img7}
                     alt={txtImg}
-                    class="h-30 grayscale hover:grayscale-0 transition"
+                    class="h-30 object-contain opacity-70 hover:opacity-100 transition-opacity"
                 />
             </div>
 
@@ -124,7 +124,7 @@ const {
                 <img
                     src={img8}
                     alt={txtImg}
-                    class="h-30 grayscale hover:grayscale-0 transition"
+                    class="h-30 object-contain opacity-70 hover:opacity-100 transition-opacity"
                 />
             </div>
 
@@ -132,7 +132,7 @@ const {
                 <img
                     src={img9}
                     alt={txtImg}
-                    class="h-30 grayscale hover:grayscale-0 transition"
+                    class="h-30 object-contain opacity-70 hover:opacity-100 transition-opacity"
                 />
             </div>
 
@@ -140,7 +140,7 @@ const {
                 <img
                     src={img10}
                     alt={txtImg}
-                    class="h-30 grayscale hover:grayscale-0 transition"
+                    class="h-30 object-contain opacity-70 hover:opacity-100 transition-opacity"
                 />
             </div>
 
@@ -148,7 +148,7 @@ const {
                 <img
                     src={img11}
                     alt={txtImg}
-                    class="h-30 grayscale hover:grayscale-0 transition"
+                    class="h-30 object-contain opacity-70 hover:opacity-100 transition-opacity"
                 />
             </div>
             <!-- img12, img13 y img14 
@@ -156,7 +156,7 @@ const {
                 <img
                     src={img12}
                     alt={txtImg}
-                    class="h-30 grayscale hover:grayscale-0 transition"
+                    class="h-30 object-contain opacity-70 hover:opacity-100 transition-opacity"
                 />
             </div>
 
@@ -164,7 +164,7 @@ const {
                 <img
                     src={"img13"}
                     alt={"txtImg"}
-                    class="h-30 grayscale hover:grayscale-0 transition"
+                    class="h-30 object-contain opacity-70 hover:opacity-100 transition-opacity"
                 />
             </div>
 
@@ -172,54 +172,55 @@ const {
                 <img
                     src={"img14"}
                     alt={"txtImg"}
-                    class="h-30 grayscale hover:grayscale-0 transition"
+                    class="h-30 object-contain opacity-70 hover:opacity-100 transition-opacity"
                 />
             </div>
         </div>
         -->
-    </div>
+        </div>
 
-    <style>
-        .content {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 3%;
-        }
-
-        .content h1 {
-            font-family: Light-Italic;
-            font-size: 4em;
-            font-weight: bold;
-            color: var(--Logo1-color);
-        }
-
-        body.dark .content h1 {
-            color: var(--primary-color);
-        }
-        body.dark p {
-            color: var(--primary-color);
-        }
-
-        body.dark .content h1 {
-            color: var(--primary-color);
-        }
-        body.dark h3 {
-            color: var(--primary-color);
-        }
-
-        @media (max-width: 600px) {
+        <style>
             .content {
-                padding: 7%;
-                height: 355px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 3%;
             }
-        }
-        .texstyle1 {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 9%;
-            height: 354px;
-        }
-    </style>
+
+            .content h1 {
+                font-family: Light-Italic;
+                font-size: 4em;
+                font-weight: bold;
+                color: var(--Logo1-color);
+            }
+
+            body.dark .content h1 {
+                color: var(--primary-color);
+            }
+            body.dark p {
+                color: var(--primary-color);
+            }
+
+            body.dark .content h1 {
+                color: var(--primary-color);
+            }
+            body.dark h3 {
+                color: var(--primary-color);
+            }
+
+            @media (max-width: 600px) {
+                .content {
+                    padding: 7%;
+                    height: 355px;
+                }
+            }
+            .texstyle1 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 9%;
+                height: 354px;
+            }
+        </style>
+    </div>
 </div>
