@@ -11,7 +11,6 @@ const allPosts = await Astro.glob("../../../content/portafolio/imgPf.md");
             <CardLogofolio
                 txt={item?.frontmatter?.txt}
                 txtImg={item?.frontmatter?.txtImg}
-                imgprueba={item?.frontmatter?.imgprueba}
                 img={item?.frontmatter?.img}
                 img1={item?.frontmatter?.img1}
                 img2={item?.frontmatter?.img2}
@@ -27,6 +26,7 @@ const allPosts = await Astro.glob("../../../content/portafolio/imgPf.md");
                 img12={item?.frontmatter?.img12}
                 img13={item?.frontmatter?.img13}
                 img14={item?.frontmatter?.img14}
+                img15={item?.frontmatter?.img15}
             />
         ))
     }

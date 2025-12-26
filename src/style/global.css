@@ -4,6 +4,7 @@
   --primary-700-color: rgba(255, 255, 255, 0.747);
   --primary-900-color: #E5E7EB;
   --secundary-color: #000;
+  --lima-900:#a3e635;
   --Logo1-color: #550197;
   --Logo1-900-color: #5601979a;
   --Logo1-400-color: #bb8be09a;
@@ -14,6 +15,7 @@
   --ya-color: #e0da03;
   --ya-900-color: rgba(229, 229, 46, 0.9);
   --ro-color: #f82cb2;
+  
 
   /* Variables Button uno */
   --button_radius: 0.75em;

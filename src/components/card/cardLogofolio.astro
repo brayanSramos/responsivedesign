@@ -18,7 +18,7 @@ interface Props {
     img12: string;
     img13: string;
     img14: string;
-    imgprueba: string;
+    img15: string;
 }
 const {
     txt,
@@ -38,7 +38,7 @@ const {
     img12,
     img13,
     img14,
-    imgprueba,
+    img15,
 } = Astro.props;
 ---
 
@@ -147,6 +147,13 @@ const {
             <div class="flex justify-center">
                 <img
                     src={img11}
+                    alt={txtImg}
+                    class="h-30 object-contain opacity-70 hover:opacity-100 transition-opacity"
+                />
+            </div>
+            <div class="flex justify-center">
+                <img
+                    src={img15}
                     alt={txtImg}
                     class="h-30 object-contain opacity-70 hover:opacity-100 transition-opacity"
                 />

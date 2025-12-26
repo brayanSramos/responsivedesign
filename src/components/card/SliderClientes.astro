@@ -43,231 +43,108 @@ const {
 } = Astro.props;
 ---
 
-<section class="py-16 overflow-hidden bg-[var(--dark-colorclien)]">
-  <h4 class="titels font-extrabold text-white">{title}</h4>
+<section class="py-16 overflow-hidden">
+  <h4 class="titels font-extrabold">{title}</h4>
 
   <div class="max-w-9xl mx-auto px-6">
-    <h2 class="text-2xl md:text-3xl font-extrabold text-center mb-10">
+    <p class="decp text-2xl md:text-3xl font-extrabold text-center mb-10">
       {description}
-    </h2>
+    </p>
   </div>
 
-  <!-- Slider -->
-  <div class="relative w-full overflow-hidden">
-    <div class="flex animate-[scroll-with-jump_15s_linear_infinite]">
-      <!-- Logos (duplicados para efecto infinito) -->
-      <div class="flex items-center gap-20 px-8">
-        <ul class="flex items-center space-x-12">
-          <li class="flex-shrink-0">
-            <img
-              src={image}
-              alt="Cliente 1"
-              class="h-20 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
-            />
-          </li>
-          <li class="flex-shrink-0">
-            <img
-              src={image1}
-              alt="Cliente 2"
-              class="h-20 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
-            />
-            <li class="flex-shrink-0">
-              <img
-                src={image2}
-                alt="Cliente 3"
-                class="h-20 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
-              />
-            </li>
-            <li class="flex-shrink-0">
-              <img
-                src={image3}
-                alt="Cliente 4"
-                class="h-20 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
-              />
-              <li class="flex-shrink-0">
-                <img
-                  src={image4}
-                  alt="Cliente 5"
-                  class="h-20 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
-                />
-              </li>
-              <li class="flex-shrink-0">
-                <img
-                  src={image5}
-                  alt="Cliente 6"
-                  class="h-20 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
-                />
-                <li class="flex-shrink-0">
-                  <img
-                    src={image6}
-                    alt="Cliente 7"
-                    class="h-20 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
-                  />
-                </li>
-                <li class="flex-shrink-0">
-                  <img
-                    src={image7}
-                    alt="Cliente 8"
-                    class="h-20 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
-                  />
-                </li>
-                <li class="flex-shrink-0">
-                  <img
-                    src={image8}
-                    alt="Cliente 9"
-                    class="h-20 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
-                  />
-                </li>
-                <li class="flex-shrink-0">
-                  <img
-                    src={image9}
-                    alt="Cliente 10"
-                    class="h-20 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
-                  />
-                  <li class="flex-shrink-0">
-                    <img
-                      src={image10}
-                      alt="Cliente 11"
-                      class="h-20 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
-                    />
-                  </li>
-                  <li class="flex-shrink-0">
-                    <img
-                      src={image11}
-                      alt="Cliente 12"
-                      class="h-20 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
-                    />
-                  </li>
-                  <li class="flex-shrink-0">
-                    <img
-                      src={image12}
-                      alt="Cliente 13"
-                      class="h-20 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
-                    />
-                  </li>
-                  <li class="flex-shrink-0">
-                    <img
-                      src={image13}
-                      alt="Cliente 14"
-                      class="h-20 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
-                    />
-                    <li class="flex-shrink-0">
-                      <img
-                        src={image14}
-                        alt="Cliente 15"
-                        class="h-20 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
-                      />
-                    </li>
-                    <li class="flex-shrink-0">
-                      <img
-                        src={image15}
-                        alt="Cliente 15"
-                        class="h-20 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
-                      />
-                    </li>
-                  </li>
-                </li>
-              </li>
+  <div class="logo-carousel">
+    <div class="logo-track">
+      <!-- Logos (1ª copia) -->
+      <img src={image1} />
+      <img src={image2} />
+      <img src={image3} />
+      <img src={image4} />
+      <img src={image5} />
+      <img src={image6} />
+      <img src={image7} />
+      <img src={image8} />
+      <img src={image9} />
+      <img src={image10} />
+      <img src={image11} />
+      <img src={image12} />
+      <img src={image13} />
+      <img src={image14} />
+      <img src={image15} />
 
-              <style>
-                .slider {
-                  display: flex;
-                  height: auto;
-                  margin: auto;
-                  overflow: hidden;
-                  align-items: center;
-                }
-
-                .slider:before {
-                  position: absolute;
-                  z-index: 1;
-                  left: 0;
-                  content: "";
-                  width: 23.958%;
-                  height: 110px;
-                  background: linear-gradient(-90deg);
-                }
-
-                .slider:after {
-                  position: absolute;
-                  right: 0;
-                  content: "";
-                  width: 23.958%;
-                  height: 110px;
-                  background: linear-gradient(90deg);
-                }
-
-                .slider .slide-track {
-                  display: flex;
-                  animation: scroll 35s linear infinite;
-                  -webkit-animation: scroll 35s linear infinite;
-                  width: calc(240px * 10);
-                }
-
-                .slider .slide {
-                  display: flex;
-                }
-
-                .slider .slide img {
-                  width: 180px;
-                  height: 80px;
-                  padding: 10px;
-                  background-color: white;
-                  cursor: pointer;
-                  margin: 20px;
-                  border-radius: 8px;
-                  box-shadow:
-                    rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-                    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-                }
-
-                @keyframes scroll {
-                  0% {
-                    -webkit-transform: translateX(0);
-                    transform: translateX(0);
-                  }
-
-                  100% {
-                    -webkit-transform: translateX(calc(-240px * 15));
-                    transform: translateX(calc(-240px * 15));
-                  }
-                }
-
-                .titels {
-                  text-align: center;
-                  font-size: 4rem;
-                  padding: 35px;
-                }
-
-                @keyframes slide {
-                  from {
-                    transform: translateX(10%);
-                  }
-                  to {
-                    transform: translateX(-10%);
-                  }
-                }
-
-                .animate-slide {
-                  animation: slide 25s linear infinite;
-                }
-
-                /* Definimos la animación personalizada para el salto */
-                @keyframes scroll-with-jump {
-                  0% {
-                    /* Comienza en la posición original */
-                    transform: translateX(0);
-                  }
-                  100% {
-                    /* Se mueve completamente hacia la izquierda, fuera de la vista */
-                    transform: translateX(-100%);
-                  }
-                }
-              </style>
-            </li>
-          </li>
-        </ul>
-      </div>
+      <!-- Logos duplicados (2ª copia) -->
+      <img src={image1} />
+      <img src={image2} />
+      <img src={image3} />
+      <img src={image4} />
+      <img src={image5} />
+      <img src={image6} />
+      <img src={image7} />
+      <img src={image8} />
+      <img src={image9} />
+      <img src={image10} />
+      <img src={image11} />
+      <img src={image12} />
+      <img src={image13} />
+      <img src={image14} />
+      <img src={image15} />
     </div>
   </div>
 </section>
+
+<style>
+  .titels {
+    color: var(--dark-colorclien);
+    text-align: center;
+    font-size: 4rem;
+    padding: 35px;
+  }
+
+  .logo-carousel {
+    overflow: hidden;
+    width: 100%;
+    padding: 40px 0;
+  }
+
+  .logo-track {
+    display: flex;
+    width: max-content;
+    animation: scroll 30s linear infinite;
+  }
+
+  .logo-track img {
+    margin: 0 30px;
+    width: 180px;
+    height: 80px;
+    padding: 8px;
+    background-color: var(--dark-500-color);
+    cursor: pointer;
+    border-radius: 9px;
+    object-fit: contain;
+    opacity: 0.9;
+    transition:
+      filter 0.3s ease,
+      opacity 0.3s ease;
+  }
+
+  .logo-track img:hover {
+    filter: grayscale(0);
+    opacity: 1;
+  }
+
+  /* Animación clave */
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  .logo-carousel:hover .logo-track {
+    animation-play-state: paused;
+  }
+  .logo-track {
+    animation: scroll 45s linear infinite;
+    will-change: transform;
+  }
+</style>
