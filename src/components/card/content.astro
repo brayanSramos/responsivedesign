@@ -1,0 +1,31 @@
+---
+import "../../style/global.css";
+//interface Props {
+ //title_Inf: string;
+  //description_Inf: string;
+  //tags_Inf: string[];
+//}
+const { title_Inf, description_Inf, tags_Inf, boots } = Astro.props;
+---
+
+<div class="box2 content">
+  <div class="">
+    <h2 class="h2Txt">{title_Inf}</h2>
+    <div class="main-content1">
+      <div class="pfo colortxt">
+        <p class="marpar">{description_Inf}</p>
+      </div>
+      <button>
+        <span class="button_top">{boots}</span>
+      </button>
+    </div>
+  </div>
+</div>
+<style>
+.h2Txt {
+  color: var(--Logo1-color);
+  font-size: 2.5rem;
+  margin: 0;
+  padding: 0;
+  }
+</style>

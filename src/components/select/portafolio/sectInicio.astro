@@ -1,0 +1,64 @@
+---
+import IncioProf from "../../../components/card/inicioProf.astro";
+import "../../../style/global.css";
+
+const allPosts = await Astro.glob("../../../content/portafolio/inicioPf.md");
+---
+
+<section class="bannerPorf">
+    {
+        allPosts.map((item) => (
+            <IncioProf
+                txt={item?.frontmatter?.txt}
+                descrip={item?.frontmatter?.descrip}
+
+            />
+        ))
+    }
+</section>
+
+<style>
+    .bannerPorf {
+    }
+    .contentimg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 19%;
+        height: 100%;
+    }
+
+    .contentimg h1 {
+        font-family: Light-Italic;
+        font-size: 4em;
+        color: var(--Logo1-color);
+    }
+
+    body.dark .contentimg h1 {
+        color: var(--primary-color);
+    }
+    body.dark p {
+        color: var(--primary-color);
+    }
+
+    body.dark .contentimg h1 {
+        color: var(--primary-color);
+    }
+    body.dark h3 {
+        color: var(--primary-color);
+    }
+
+    @media (max-width: 600px) {
+        .contentimg {
+            padding: 7%;
+            height: 355px;
+        }
+    }
+    .texstyle1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 9%;
+        height: 354px;
+    }
+</style>

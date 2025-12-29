@@ -1,0 +1,28 @@
+---
+import Header from "../components/header.astro";
+import Footer from "../components/footer.astro";
+import SelectQuines from "../components/select/select.astro";
+import SelectInicio from "../components/select/selectincio.astro";
+import SelectCont from "../components/select/selectCont.astro";
+import Selectservi from "../components/select/selectservi.astro";
+import SelectClient from "../components/select/SelectClientes.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Responsive Design">
+  <Header />
+  <SelectInicio />
+  <SelectQuines />
+  <Selectservi />
+  <SelectCont />
+  <SelectClient />
+  <Footer />
+</Layout>
+
+<script>
+  const btnSwitch = document.querySelector("#switch");
+  btnSwitch.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+    btnSwitch.classList.toggle("active");
+  });
+</script>

@@ -1,0 +1,31 @@
+---
+import Card from "../card/cardCont.astro";
+import Content from "../card/content.astro";
+import "../../style/global.css";
+const allPosts = await Astro.glob("../../content/infoIncio/queHacemosRD.md");
+---
+
+<!--select -2-->
+<section class="banner">
+  {
+    allPosts.map((item) => (
+      <Card
+        title={item?.frontmatter?.title}
+        description={item?.frontmatter?.description}
+        pubDate={item?.frontmatter?.pubDate}
+        image={item?.frontmatter?.image}
+        tags={item?.frontmatter?.tags}
+      />
+    ))
+  }
+  {
+    allPosts.map((item) => (
+      <Content
+        title_Inf={item?.frontmatter?.title_Inf}
+        description_Inf={item?.frontmatter?.description_Inf}
+        tags_Inf={item?.frontmatter?.tags_Inf}
+        boots={item?.frontmatter?.boots}
+      />
+    ))
+  }
+</section>

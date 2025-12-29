@@ -1,0 +1,288 @@
+---
+import "../../style/global.css";
+
+const cards = [
+    {
+        title: "¿Qué incluye tu suscripción a Mosst Design?",
+        bg: "bg-lime-400",
+        text: "text-purple-900",
+    },
+    {
+        title: "branding & marca",
+        desc: "Logos, identidad visual y manual de marca",
+        bg: "bg-purple-700",
+        text: "text-lime-400",
+    },
+    {
+        title: "redes sociales contenido digital",
+        desc: "Posts, historias, reels y presentaciones visuales",
+        bg: "bg-purple-800",
+        text: "text-lime-400",
+    },
+    {
+        title: "impresos & packaging",
+        desc: "Brochures, etiquetas y diseños listos para imprimir",
+        bg: "bg-lime-400",
+        text: "text-purple-900",
+    },
+    {
+        title: "web & digital",
+        desc: "Landing pages y mockups para tu negocio online",
+        bg: "bg-purple-700",
+        text: "text-lime-400",
+    },
+    {
+        title: "Todo esto en un solo plan",
+        price: "$299 / mes",
+        bg: "bg-purple-800",
+        text: "text-lime-400",
+    },
+];
+---
+
+<section class="bannerPorf pb-10">
+    <div class="boxdiv">
+        <div class="content">
+            <div class="max-w-prose">
+                <h2 class="font-bold">Marketing Digital</h2>
+            </div>
+        </div>
+    </div>
+    <div class="rounded-2xl p-10 max-w-6xl mx-auto overflow-hidden shadow-2xl">
+        <!-- HEADER -->
+
+        <div class="mb-8 max-w-2xl">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-purple-700">
+                Social Media & Marketing Concepts
+            </h2>
+            <p class="text-sm text-neutral-600 mt-2">
+                En este sección presento una selección de diseños conceptuales
+                creados para distintas marcas, con el objetivo de mostrar mi
+                capacidad para desarrollar piezas atractivas y estratégicas para
+                redes sociales.
+            </p>
+        </div>
+
+        <!-- Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Card 1 -->
+            <div
+                class="w-full h-full relative overflow-hidden shadow-2xl p-2 rounded-2xl h-64"
+            >
+                <img
+                    src="../../public/img/num_3.png"
+                    alt={"txtImg"}
+                    class="w-50 h-50 rounded-2xl transition-transform duration-300 hover:scale-105"
+                />
+                <div class="p-6 rounded-2xl overflow-hidden">
+                    <h3 class="text-2xl font-extrabold text-purple-800">
+                        ¿Qué incluye tu suscripción a Mosst Design?
+                    </h3>
+                <p class="mt-2 text-sm text-purple-900">
+                    Todo esto en un solo plan de diseño ilimitado
+                </p>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div
+                class="bg-purple-900 text-white p-2 rounded-2xl w-full relative overflow-hidden h-full shadow-2xl"
+            >
+                <img
+                    src="../../public/img/num_3.png"
+                    alt={"txtImg"}
+                    class="w-50 h-50 rounded-2xl transition-transform duration-300 hover:scale-105"
+                />
+                <div class="p-6 rounded-2xl overflow-hidden">
+                    <h3 class="text-3xl font-extrabold text-lime-400">
+                        branding <span class="text-white">&</span> marca
+                    </h3>
+                    <p class="text-sm mt-2 text-gray-200">
+                        Logos, identidad visual y rebranding para tu marca.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-purple-300 p-2 rounded-2xl w-full h-full relative overflow-hidden h-full shadow-2xl">
+                <img
+                    src="../../public/img/num_3.png"
+                    alt={"txtImg"}
+                    class="w-50 h-50 rounded-2xl transition-transform duration-300 hover:scale-105"
+                />
+                <div class="p-6 rounded-2xl overflow-hidden">
+                    <h3 class="text-3xl font-extrabold text-purple-900">
+                        redes sociales <span class="text-lime-500">&</span> contenido
+                        digital
+                    </h3>
+                    <p class="mt-2 text-sm text-purple-900">
+                        Posts, stories, reels y presentaciones que venden
+                </p>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="bg-lime-400 p-2 rounded-2xl w-full h-full relative overflow-hidden h-full shadow-2xl">
+                <img
+                    src="../../public/img/num_3.png"
+                    alt={"txtImg"}
+                    class="w-50 h-50 rounded-2xl transition-transform duration-300 hover:scale-105"
+                />
+                <div class="p-6 rounded-2xl overflow-hidden">
+                   <h3 class="text-3xl font-extrabold text-purple-900">
+                    impresos <span class="text-purple-700">&</span> packaging
+                </h3>
+                <p class="mt-2 text-sm text-purple-900">
+                    Brochures, etiquetas y empaques listos para destacar
+                </p>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="bg-purple-900 p-2 rounded-2xl w-full h-full relative overflow-hidden h-full shadow-2xl">
+                <img
+                    src="../../public/img/num_3.png"
+                    alt={"txtImg"}
+                    class="w-50 h-50 rounded-2xl transition-transform duration-300 hover:scale-105"
+                />
+                <div class="p-6 rounded-2xl overflow-hidden">
+                <h3 class="text-3xl font-extrabold text-lime-400">
+                    web <span class="text-white">&</span> digital
+                </h3>
+                <p class="mt-2 text-sm text-gray-300">
+                    Landing pages y mockups para tu negocio online
+                </p>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div
+                class="bg-purple-300 p-2 rounded-2xl w-full h-full relative overflow-hidden h-full shadow-2xl flex flex-col justify-between"
+            >
+                
+                <img
+                    src="../../public/img/num_3.png"
+                    alt={"txtImg"}
+                    class="w-50 h-50 rounded-2xl transition-transform duration-300 hover:scale-105"
+                />
+                <div class="p-6 rounded-2xl overflow-hidden">
+                    <span class="font-bold text-purple-900">@mosst</span>
+                    <p class="text-sm text-purple-900 mt-2">
+                        Todo esto en un solo plan de diseño ilimitado
+                    </p>
+                    <p class="text-3xl font-extrabold text-purple-900">
+                        $299 <span class="text-base">/mes</span>
+                    </p>
+                    <button
+                        class="mt-3 inline-block bg-lime-400 text-purple-900 font-bold px-4 py-2 rounded-xl"
+                    >
+                        escríbenos
+                    </button>
+                    <button>
+                        <a href={"url"}>
+                            <span class="button_top">{"button"}</span>
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- GRID IMÁGENES GRANDES -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+            <div class="rounded-2xl overflow-hidden">
+                <img
+                    src="../../public/img/num_3.png"
+                    alt="Campaña publicitaria"
+                    class="w-full h-full object-cover"
+                />
+            </div>
+
+            <div class="rounded-2xl overflow-hidden">
+                <img
+                    src="../../public/img/num_3.png"
+                    alt="Branding Mosst"
+                    class="w-full h-full object-cover"
+                />
+            </div>
+        </div>
+    </div>
+</section>
+<!-- fin --------------------------------------------------------------------------- -->
+
+<!-- GRID PRINCIPAL 
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    {
+        cards.map((card) => (
+            <div class={`rounded-2xl p-6 flex flex-col justify-between min-h-[180px] ${card.bg}`}>
+                <div>
+                    <img
+                        src="../../public/img/num_3.png"
+                        alt={"txtImg"}
+                        class="max-w-full transition-transform duration-300 hover:scale-105"
+                    />
+                    <h3 class={`font-bold leading-tight ${card.text}`}>
+                        {card.title}
+                    </h3>
+
+                    {card.desc && (
+                        <p class={`text-sm mt-2 ${card.text}`}>
+                            {card.desc}
+                        </p>
+                    )}
+                </div>
+
+                {card.price && (
+                    <span
+                        class={`text-lg font-extrabold mt-4 ${card.text}`}
+                    >
+                        {card.price}
+                    </span>
+                )}
+            </div>
+        ))
+    }
+</div>
+-->
+
+<style>
+    .contentimg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 19%;
+        height: 100%;
+    }
+
+    .contentimg h1 {
+        font-family: Light-Italic;
+        font-size: 4em;
+        color: var(--Logo1-color);
+    }
+
+    body.dark .contentimg h1 {
+        color: var(--primary-color);
+    }
+    body.dark p {
+        color: var(--primary-color);
+    }
+
+    body.dark .contentimg h1 {
+        color: var(--primary-color);
+    }
+    body.dark h3 {
+        color: var(--primary-color);
+    }
+
+    @media (max-width: 600px) {
+        .contentimg {
+            padding: 7%;
+            height: 355px;
+        }
+    }
+    .texstyle1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 9%;
+        height: 354px;
+    }
+</style>

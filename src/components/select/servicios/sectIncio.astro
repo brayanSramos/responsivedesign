@@ -1,0 +1,64 @@
+---
+import IncioServi from "../../../components/card/inicioServi.astro";
+import "../../../style/global.css";
+
+const allPosts = await Astro.glob("../../../content/servicios/inicioServi.md");
+---
+
+<section class="banner">
+{
+    allPosts.map((item) => (
+      <IncioServi
+        txt3={item?.frontmatter?.txt3}
+        descrip3={item?.frontmatter?.descrip3}
+        txt4={item?.frontmatter?.txt4}
+        descrip4={item?.frontmatter?.descrip4}
+        tasgInico={item?.frontmatter?.tasgInico}
+      />
+    ))
+  }
+</section>
+
+<style>
+  .contentimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 19%;
+    height: 100%;
+  }
+
+  .contentimg h1  {
+    font-family: Light-Italic;
+    font-size: 4em;
+    color: var(--Logo1-color);
+  }
+
+  body.dark .contentimg h1 {
+    color: var(--primary-color);
+  }
+  body.dark p {
+    color: var(--primary-color);
+  }
+
+  body.dark .contentimg h1 {
+    color: var(--primary-color);
+  }
+  body.dark h3 {
+    color: var(--primary-color);
+  }
+
+  @media (max-width: 600px) {
+    .contentimg {
+      padding: 7%;
+      height: 355px;
+    }
+  }
+  .texstyle1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 9%;
+    height: 354px;
+  }
+</style>

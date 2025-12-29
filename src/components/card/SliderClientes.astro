@@ -1,0 +1,150 @@
+---
+import "../../style/global.css";
+interface Props {
+  title: string;
+  description: string;
+  image: string;
+  image1: string;
+  image2: string;
+  image3: string;
+  image4: string;
+  image5: string;
+  image6: string;
+  image7: string;
+  image8: string;
+  image9: string;
+  image10: string;
+  image11: string;
+  image12: string;
+  image13: string;
+  image14: string;
+  image15: string;
+}
+
+const {
+  title,
+  description,
+  image,
+  image1,
+  image2,
+  image3,
+  image4,
+  image5,
+  image6,
+  image7,
+  image8,
+  image9,
+  image10,
+  image11,
+  image12,
+  image13,
+  image14,
+  image15,
+} = Astro.props;
+---
+
+<section class="py-16 overflow-hidden">
+  <h4 class="titels font-extrabold">{title}</h4>
+
+  <div class="max-w-9xl mx-auto px-6">
+    <p class="decp text-2xl md:text-3xl font-extrabold text-center mb-10">
+      {description}
+    </p>
+  </div>
+
+  <div class="logo-carousel">
+    <div class="logo-track">
+      <!-- Logos (1ª copia) -->
+      <img src={image1} />
+      <img src={image2} />
+      <img src={image3} />
+      <img src={image4} />
+      <img src={image5} />
+      <img src={image6} />
+      <img src={image7} />
+      <img src={image8} />
+      <img src={image9} />
+      <img src={image10} />
+      <img src={image11} />
+      <img src={image12} />
+      <img src={image13} />
+      <img src={image14} />
+      <img src={image15} />
+
+      <!-- Logos duplicados (2ª copia) -->
+      <img src={image1} />
+      <img src={image2} />
+      <img src={image3} />
+      <img src={image4} />
+      <img src={image5} />
+      <img src={image6} />
+      <img src={image7} />
+      <img src={image8} />
+      <img src={image9} />
+      <img src={image10} />
+      <img src={image11} />
+      <img src={image12} />
+      <img src={image13} />
+      <img src={image14} />
+      <img src={image15} />
+    </div>
+  </div>
+</section>
+
+<style>
+  .titels {
+    color: var(--dark-colorclien);
+    text-align: center;
+    font-size: 4rem;
+    padding: 35px;
+  }
+
+  .logo-carousel {
+    overflow: hidden;
+    width: 100%;
+    padding: 40px 0;
+  }
+
+  .logo-track {
+    display: flex;
+    width: max-content;
+    animation: scroll 30s linear infinite;
+  }
+
+  .logo-track img {
+    margin: 0 30px;
+    width: 180px;
+    height: 80px;
+    padding: 8px;
+    background-color: var(--dark-500-color);
+    cursor: pointer;
+    border-radius: 9px;
+    object-fit: contain;
+    opacity: 0.9;
+    transition:
+      filter 0.3s ease,
+      opacity 0.3s ease;
+  }
+
+  .logo-track img:hover {
+    filter: grayscale(0);
+    opacity: 1;
+  }
+
+  /* Animación clave */
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  .logo-carousel:hover .logo-track {
+    animation-play-state: paused;
+  }
+  .logo-track {
+    animation: scroll 45s linear infinite;
+    will-change: transform;
+  }
+</style>

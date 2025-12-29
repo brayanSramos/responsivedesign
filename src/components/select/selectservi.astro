@@ -1,0 +1,99 @@
+---
+import Card from "../card/cardservi.astro";
+import CardPorfolio from "../card/cardservicio.astro";
+import "../../style/global.css";
+const allPosts = await Astro.glob("../../content/*.md");
+---
+
+<!--select -2-->
+<section class="banners">
+  <h4 class="titels">Nuestros Servicios</h4>
+  <div class="card-texs description">
+    <p class="">
+      Ofrecemos un amplio portafolio de servicios diseñados para el crecimiento
+      de su empresa y la proyección de una imagen profesional y moderna.
+    </p>
+  </div>
+  <div>
+    <div class="card-grid">
+      {
+        allPosts.map((item) => (
+          <Card
+            title={item?.frontmatter?.title}
+            description={item?.frontmatter?.description}
+            pubDate={item?.frontmatter?.pubDate}
+            image={item?.frontmatter?.image}
+            tags={item?.frontmatter?.tags}
+          />
+        ))
+      }
+    </div>
+    <div class="sepat">
+      <button>
+        <span class="button_top">Más Información</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<style>
+  .card-grid {
+    display: grid;
+    grid-column-gap: var(--spacing-l);
+    grid-row-gap: var(--spacing-l);
+    max-width: var(--width-container);
+    width: 100%;
+  }
+  .card-texs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 45px;
+  }
+  .banners {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+  }
+
+  .titels {
+    text-align: center;
+    font-size: 4rem;
+    color: var(--Logo1-color);
+    padding: 25px;
+  }
+  .description {
+    text-align: center;
+    font-size: 1rem;
+    color: var(--dark-color);
+    width: auto;
+  }
+
+  .sepat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+  }
+
+  body.dark p {
+    color: var(--primary-color);
+  }
+  @media (min-width: 540px) {
+    .card-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 960px) {
+    .card-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .description {
+      width: 50%;
+    }
+  }
+</style>

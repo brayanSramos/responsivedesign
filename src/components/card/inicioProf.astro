@@ -1,0 +1,66 @@
+---
+import "../../style/global.css";
+interface Props {
+    txt: string;
+    descrip: string;
+}
+const { txt, descrip } = Astro.props;
+---
+
+<!-- Imagen y texto -->
+<div class="boxdiv images">
+    <div class="imgBx">
+        <div class="contentimg">
+            <div class="max-w-prose">
+                <h1 class="text-4xl md:text-5xl font-semibold text1">{txt}</h1>
+                <p class="text-right text-[var(--primary-color)] text-3xl">
+                    {descrip}
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .contentimg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 19%;
+        height: 100%;
+    }
+
+    .contentimg h1 {
+        font-family: Light-Italic;
+        font-size: 10em;
+        color: var(--Logo1-color);
+    }
+
+    body.dark .contentimg h1 {
+        color: var(--primary-color);
+    }
+    body.dark p {
+        color: var(--primary-color);
+    }
+
+    body.dark .contentimg h1 {
+        color: var(--primary-color);
+    }
+    body.dark h3 {
+        color: var(--primary-color);
+    }
+
+    @media (max-width: 600px) {
+        .contentimg {
+            padding: 7%;
+            height: 355px;
+        }
+    }
+    .texstyle1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 9%;
+        height: 354px;
+    }
+</style>

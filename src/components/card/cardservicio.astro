@@ -1,0 +1,57 @@
+---
+interface Props {
+  title: string;
+  pubDate: String;
+  description: string;
+  image: string;
+  tags: string[];
+}
+const { title, description, image, tags, pubDate } = Astro.props;
+---
+
+<div class="box contentSer">
+  <div class="card1">
+    <p class="header1">{title}</p>
+    <p class="header1">{image}</p>
+    <div class="main-content1">
+      <p class="heading1">{description}</p>
+    </div>
+    <div class="footer1">
+      <p class="header1">{pubDate}</p>
+      <p class="header1">{tags}</p>
+    </div>
+  </div>
+</div>
+
+<style>
+  .contentSer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  .card1 {
+    height: 350px;
+    padding: 20px;
+    color: var(--primary-color);
+    background: transparent;
+    border-radius: 12px;
+    border: 2px solid var(--Logo1-color);
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transform-origin: center center;
+    transition: all 0.8s;
+    border-radius: 12px;
+    background-color: var(--Logo1-color);
+    box-shadow: 0px 3px 187.5px 7.5px var(--Logo1-900-color);
+  }
+  .card1:hover {
+    border-radius: 12px;
+    background-color: var(--Logo1-color);
+    scale: 0.95;
+    rotate: 5deg;
+    box-shadow: 0px 3px 187.5px 7.5px var(--Logo1-900-color);
+  }
+  
+</style>
+

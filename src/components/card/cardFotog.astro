@@ -1,0 +1,157 @@
+---
+import "../../style/global.css";
+interface Props {
+    title: string;
+    descripcion: string;
+    avatar: string;
+    imageprincipal: string;
+    url: string;
+    button: string;
+    galeria1: string;
+    galeria2: string;
+    galeria3: string;
+    galeria4: string;
+}
+const {
+    title,
+    descripcion,
+    avatar,
+    imageprincipal,
+    url,
+    button,
+    galeria1,
+    galeria2,
+    galeria3,
+    galeria4,
+} = Astro.props;
+---
+
+<div class="min-h-screen flex items-center justify-center p-6">
+    <div class="max-w-6xl w-full rounded-2xl overflow-hidden shadow-2xl">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2">
+            <!-- IMAGEN -->
+            <div class="relative">
+                <img
+                    src={imageprincipal}
+                    alt="Brand visual"
+                    class="w-full h-full object-cover rounded-none lg:rounded-l-3xl"
+                />
+            </div>
+
+            <!-- PANEL DERECHO -->
+            <div class="flex items-center px-8 py-16 lg:px-16">
+                <div class="max-w-md space-y-6">
+                    <!-- Avatar -->
+                    <div class="flex items-center gap-3">
+                        <img
+                            src={avatar}
+                            alt="Avatar"
+                            class="w-10 h-10 rounded-full object-cover"
+                        />
+                        <span class="text-sm spantxt">Creative Director</span>
+                    </div>
+
+                    <!-- Título -->
+                    <h2 class="text-3xl font-semibold">{title}</h2>
+
+                    <!-- Texto -->
+                    <p class="leading-relaxed text-sm">
+                        The foundation of NEXA is the philosophy of silent
+                        strength. We believe that true speed is not noise — but
+                        in smooth precision.
+                    </p>
+
+                    <!-- Lista -->
+                    <ul class="text-sm spantxt space-y-2">
+                        <li>• freedom without shouting</li>
+                        <li>• speed without showing off</li>
+                        <li>• power without noise</li>
+                    </ul>
+
+                    <!-- Claim -->
+                    <p class="text-sm font-medium">
+                        NEXA — <span class="spantxt font-bold"
+                            >motion that speaks for you.</span
+                        >
+                    </p>
+
+                    <!-- Botón / Icono -->
+                    <div class="pt-5">
+                        <button>
+                            <a href={url}>
+                                <span class="button_top">{button} </span>
+                            </a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- GALERÍA INFERIOR -->
+        <div class="grid grid-cols-2 pt-7">
+            <!-- Item 1 -->
+            <div class="rounded-2xl flex items-center justify-center">
+                <a href={url}>
+                    <img
+                        src={galeria1}
+                        alt={"txtImg"}
+                        class="max-w-full transition-transform duration-300 hover:scale-105 lg:rounded-tl-3xl"
+                    />
+                </a>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="rounded-2xl flex items-center justify-center">
+                <a href={url}>
+                    <img
+                        src={galeria2}
+                        alt={"txtImg"}
+                        class="max-w-full transition-transform duration-300 hover:scale-105 lg:rounded-tr-3xl"
+                    />
+                </a>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="rounded-2xl flex items-center justify-center">
+                <a href={url}>
+                    <img
+                        src={galeria3}
+                        alt={"txtImg"}
+                        class="max-w-full transition-transform duration-300 hover:scale-105"
+                    />
+                </a>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="rounded-2xl flex items-center justify-center">
+                <a href={url}>
+                    <img
+                        src={galeria4}
+                        alt={"txtImg"}
+                        class="max-w-full transition-transform duration-300 hover:scale-105"
+                    />
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    .content {
+        padding: 5%;
+    }
+    body.dark h1 {
+        color: var(--primary-color);
+    }
+    body.dark p {
+        color: var(--primary-color);
+    }
+    body.dark h3 {
+        color: var(--primary-color);
+    }
+    body.dark h2 {
+        color: var(--primary-color);
+    }
+    body.dark .spantxt {
+        color: var(--primary-color);
+    }
+</style>
