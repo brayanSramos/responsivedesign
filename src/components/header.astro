@@ -1,7 +1,7 @@
 ---
 import "../style/global.css";
 import Logo from "../components/icon/logoRd.astro";
-import logow from "../../public/img/icon/iconWh.svg";
+import logow from "../../public/img/icon/IconWh.svg";
 import { menuItems } from "../menu/navigation.js";
 ---
 
@@ -20,9 +20,13 @@ import { menuItems } from "../menu/navigation.js";
       </label>
 
       <nav class="nav">
-        { menuItems.map((item) => (
-          <a class="nav-item" href={item.href}>{item.name}</a>
-        ))}
+        {
+          menuItems.map((item) => (
+            <a class="nav-item" href={item.href}>
+              {item.name}
+            </a>
+          ))
+        }
       </nav>
     </div>
     <dir class="logoMovil">
@@ -32,11 +36,17 @@ import { menuItems } from "../menu/navigation.js";
 
     <!-- Menu pc y Logo en SVG-->
     <nav>
-        {menuItems.map((item) => (
-        <ul>
-          <li><a class="menuitem" href={item.href}>{item.name}</a></li>
-        </ul>
-       ))}
+      {
+        menuItems.map((item) => (
+          <ul>
+            <li>
+              <a class="menuitem" href={item.href}>
+                {item.name}
+              </a>
+            </li>
+          </ul>
+        ))
+      }
       <ul>
         <li>
           <button class="switch" id="switch">
