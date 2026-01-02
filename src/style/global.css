@@ -569,7 +569,6 @@ body.dark .sci h3 {
 .images .imgBx {
   position: relative;
   width: 50%;
-  background-image: url('img/num_1.svg');
   background-size: cover;
   width: 100%;
 }
