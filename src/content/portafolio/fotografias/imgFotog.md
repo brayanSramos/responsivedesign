@@ -1,12 +1,12 @@
 ---
 title: "Fotografía"
 descripcion: "Fotografía"
-avatar: "../../public/img/fotografias/paramo.jpeg"
-imageprincipal: "../../public/img/fotografias/fot6.jpg"
-galeria1: "../../public/img/fotografias/fot4.jpg"
-galeria2: "../../public/img/fotografias/fot2.jpg"
-galeria3: "../../public/img/fotografias/fot5.jpg"
-galeria4: "../../public/img/fotografias/fot3.jpg"
+avatar: "img/paramo.webp"
+imageprincipal: "img/fot6.webp"
+galeria1: "img/fot4.webp"
+galeria2: "img/fot2.webp"
+galeria3: "img/fot5.webp"
+galeria4: "img/fot3.webp"
 url: "https://unsplash.com/es/@braynsramos"
 button: "UNSPLASH"
 ---

@@ -1,5 +1,5 @@
 ---
 title: "Mi post"
-cover: "../../../public/img/dig.webp"
+cover: "img/diG.webp"
 coverAlt: "Descripción de la imagen"
 ---
