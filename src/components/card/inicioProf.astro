@@ -12,8 +12,8 @@ const { txt, descrip } = Astro.props;
     <div class="imgBx">
         <div class="contentimg">
             <div class="max-w-prose">
-                <h1 class="text-4xl md:text-5xl font-semibold text1">{txt}</h1>
-                <p class="text-right text-[var(--primary-color)] text-3xl">
+                <h1 class="text-8xl md:text-[12.9rem] font-semibold text1">{txt}</h1>
+                <p class="text-right text-[var(--primary-color)] md:text-3xl text-[0.875rem] leading-[0rem] ">
                     {descrip}
                 </p>
             </div>
@@ -32,7 +32,7 @@ const { txt, descrip } = Astro.props;
 
     .contentimg h1 {
         font-family: Light-Italic;
-        font-size: 10em;
+        /* font-size: 10em; */
         color: var(--Logo1-color);
     }
 
