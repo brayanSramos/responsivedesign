@@ -18,5 +18,5 @@ imgicon: "img/Paginaweb-sdr.webp"
 img1: "img/TarjetasWEB-SDR.webp"
 img2: "img/TEXTIL-SDR1.webp"
 img3: "img/posttintaWEB-SDR.webp"
-img4: "img/PostInstagramGC1.webp"
+img4: "img/num_1.webp"
 ---
