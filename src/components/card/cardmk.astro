@@ -1,6 +1,51 @@
 ---
 import "../../style/global.css";
 
+interface Props {
+    txt: string;
+    txtImg: string;
+    p: string;
+    reto: string;
+    solución: string;
+    resultado: string;
+    tipo: string;
+    tlogo: string;
+    button: string;
+    color1: string;
+    color2: string;
+    color3: string;
+    url: string;
+    img: string;
+    imgicon: string;
+    avatar: string;
+    img1: string;
+    img2: string;
+    img3: string;
+    img4: string;
+}
+const {
+    txt,
+    txtImg,
+    p,
+    reto,
+    solución,
+    resultado,
+    tipo,
+    tlogo,
+    button,
+    color1,
+    color2,
+    color3,
+    url,
+    img,
+    imgicon,
+    avatar,
+    img1,
+    img2,
+    img3,
+    img4,
+} = Astro.props;
+
 const cards = [
     {
         title: "¿Qué incluye tu suscripción a Mosst Design?",
@@ -44,22 +89,24 @@ const cards = [
     <div class="boxdiv">
         <div class="content">
             <div class="max-w-prose">
-                <h2 class="font-bold">Marketing Digital</h2>
+                <h2 class="font-bold">Marketing Digital{txt}</h2>
             </div>
         </div>
     </div>
     <div class="rounded-2xl p-10 max-w-6xl mx-auto overflow-hidden shadow-2xl">
         <!-- HEADER -->
 
-        <div class="mb-8 max-w-2xl">
-            <h2 class="text-3xl md:text-4xl font-extrabold text-purple-700">
-                Social Media & Marketing Concepts
+        <div class="mb-8 max-w-4xl">
+            <h2 class="text-3xl md:text-3xl font-extrabold text-purple-700">
+                Marketing Digital y Crecimiento en Redes Sociales
             </h2>
             <p class="text-sm text-neutral-600 mt-2">
-                En este sección presento una selección de diseños conceptuales
-                creados para distintas marcas, con el objetivo de mostrar mi
-                capacidad para desarrollar piezas atractivas y estratégicas para
-                redes sociales.
+                {txt}
+                En Responsive Design ayudamos a marcas y empresas a crecer en el 
+                entorno digital a través de estrategias de marketing enfocadas 
+                en resultados reales: más visibilidad, más interacción y más clientes.
+                No se trata solo de publicar contenido, sino de construir presencia, 
+                posicionamiento y autoridad en el mercado.
             </p>
         </div>
 
@@ -277,6 +324,11 @@ const cards = [
             padding: 7%;
             height: 355px;
         }
+          .content h2 {
+            font-size: 3em;
+            text-align: center;
+        }
+
     }
     .texstyle1 {
         display: flex;
