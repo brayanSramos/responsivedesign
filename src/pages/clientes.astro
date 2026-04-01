@@ -1,25 +1,16 @@
 ---
 import Header from "../components/header.astro";
 import Footer from "../components/footer.astro";
-import SelectProf from "../components/select/portafolio/sectInicio.astro";
-import SectLogofolio from "../components/select/portafolio/sectLogofolio.astro";
-import SectProyct from "../components/select/portafolio/sectProyct.astro";
-import SectFotog from "../components/select/portafolio/sectfotog.astro";
-import Cardmk from "../components/card/cardmk.astro";
+import SelectClient from "../components/select/SelectClientes.astro";
 import Layout from "../layouts/Layout.astro";
 import "../style/global.css";
 
 const allPosts = await Astro.glob("../content/*.md");
 ---
-
 <Layout title="Responsive Design | Portafolio">
   <Header />
   <main>
-    <SelectProf />
-    <SectLogofolio />
-    <SectProyct />
-    <SectFotog />
-    <Cardmk />
+    <SelectClient />
   </main>
   <Footer />
 </Layout>
