@@ -488,6 +488,14 @@ body.dark .loader {
 
 /* lOADER SERVICIOS fin - a  -------------------------------------- */
 
+/* ------ Componete/card - SilderClientes inicio ------------- */
+
+  body.dark .decp {
+    color: var(--primary-color);
+  } 
+
+/* ------ Componete/card - SilderClientes Final ---------------- */
+
 /* Button uno -------------------------------------- */
 
 button {
