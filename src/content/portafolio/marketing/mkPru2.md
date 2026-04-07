@@ -1,7 +1,7 @@
 ---
-txt1: "impresos & packaging"
+txt1: "@mosst"
 txt2: ""
-desc: "Brochures, etiquetas y empaques listos para destacar"
+desc: "Todo esto en un solo plan de diseño ilimitado"
 img: "img/num_1.webp"
 txtImg: "Img de Campañas"
 comp: ""

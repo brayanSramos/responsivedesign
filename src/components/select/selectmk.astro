@@ -1,0 +1,179 @@
+---
+import Bottom from '../UX/bottom.astro';
+import CardTittelo from '../card/cardTitulomk.astro';
+import CardHeaderMk from '../card/CardHeaderMk.astro';
+import Card1 from '../card/card-1-mk.astro';
+import Card2 from '../card/card-2-mk.astro';
+import '../../style/global.css';
+
+// const cards = [
+//     {
+//         title: "¿Qué incluye tu suscripción a Mosst Design?",
+//         bg: "bg-lime-400",
+//         text: "text-purple-900",
+//     },
+//     {
+//         title: "branding & marca",
+//         desc: "Logos, identidad visual y manual de marca",
+//         bg: "bg-purple-700",
+//         text: "text-lime-400",
+//     },
+//     {
+//         title: "redes sociales contenido digital",
+//         desc: "Posts, historias, reels y presentaciones visuales",
+//         bg: "bg-purple-800",
+//         text: "text-lime-400",
+//     },
+//     {
+//         title: "impresos & packaging",
+//         desc: "Brochures, etiquetas y diseños listos para imprimir",
+//         bg: "bg-lime-400",
+//         text: "text-purple-900",
+//     },
+//     {
+//         title: "web & digital",
+//         desc: "Landing pages y mockups para tu negocio online",
+//         bg: "bg-purple-700",
+//         text: "text-lime-400",
+//     },
+//     {
+//         title: "Todo esto en un solo plan",
+//         price: "$299 / mes",
+//         bg: "bg-purple-800",
+//         text: "text-lime-400",
+//     },
+// ];
+const allPosts = await Astro.glob('../../content/portafolio/marketing/*.md');
+---
+
+<section class="bannerPorf pb-10">
+  <CardTittelo />
+  <div class="rounded-2xl p-10 max-w-6xl mx-auto overflow-hidden shadow-2xl">
+    <!-- HEADER -->
+    <CardHeaderMk />
+    <!-- Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Card -->
+      {
+        allPosts.map((item) => (
+          <Card1
+            txt1={item?.frontmatter?.txt1}
+            txt2={item?.frontmatter?.txt2}
+            desc={item?.frontmatter?.desc}
+            preci={item?.frontmatter?.preci}
+            mes={item?.frontmatter?.mes}
+            comp={item?.frontmatter?.comp}
+            img={item?.frontmatter?.img}
+            txtImg={item?.frontmatter?.txtImg}
+            colorCard={item?.frontmatter?.colorCard}
+            colorText={item?.frontmatter?.colorText}
+            colorPaf={item?.frontmatter?.colorPaf}
+            url={item?.frontmatter?.url}
+          />
+        ))
+      }
+    </div>
+    <!-- GRID IMÁGENES GRANDES -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+      <div class="rounded-2xl overflow-hidden">
+        <img
+          src="../../public/img/num_3.webp"
+          alt="Campaña publicitaria"
+          class="w-full h-full object-cover"
+        />
+      </div>
+
+      <div class="rounded-2xl overflow-hidden">
+        <img
+          src="../../public/img/num_3.webp"
+          alt="Branding Mosst"
+          class="w-full h-full object-cover"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+<!-- fin --------------------------------------------------------------------------- -->
+
+<!-- GRID PRINCIPAL 
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    {
+        cards.map((card) => (
+            <div class={`rounded-2xl p-6 flex flex-col justify-between min-h-[180px] ${card.bg}`}>
+                <div>
+                    <img
+                        src="../../public/img/num_3.png"
+                        alt={"txtImg"}
+                        class="max-w-full transition-transform duration-300 hover:scale-105"
+                    />
+                    <h3 class={`font-bold leading-tight ${card.text}`}>
+                        {card.title}
+                    </h3>
+
+                    {card.desc && (
+                        <p class={`text-sm mt-2 ${card.text}`}>
+                            {card.desc}
+                        </p>
+                    )}
+                </div>
+
+                {card.price && (
+                    <span
+                        class={`text-lg font-extrabold mt-4 ${card.text}`}
+                    >
+                        {card.price}
+                    </span>
+                )}
+            </div>
+        ))
+    }
+</div>
+-->
+
+<style>
+  .contentimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 19%;
+    height: 100%;
+  }
+
+  .contentimg h1 {
+    font-family: Light-Italic;
+    font-size: 4em;
+    color: var(--Logo1-color);
+  }
+
+  body.dark .contentimg h1 {
+    color: var(--primary-color);
+  }
+  body.dark p {
+    color: var(--primary-color);
+  }
+
+  body.dark .contentimg h1 {
+    color: var(--primary-color);
+  }
+  body.dark h3 {
+    color: var(--primary-color);
+  }
+
+  @media (max-width: 600px) {
+    .contentimg {
+      padding: 7%;
+      height: 355px;
+    }
+    .content h2 {
+      font-size: 3em;
+      text-align: center;
+    }
+  }
+  .texstyle1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 9%;
+    height: 354px;
+  }
+</style>

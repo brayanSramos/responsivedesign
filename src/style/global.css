@@ -22,11 +22,17 @@ Crea,comparte y aprende.
   --primary-500-color: rgba(255, 255, 255, 0.5);
   --primary-700-color: rgba(255, 255, 255, 0.747);
   --primary-900-color: #E5E7EB;
+  --primary-color-gris: #585858;
   --secundary-color: #000;
   --lima-900: #a3e635;
+  --limo-999: #84cc16;
+  --limo-400: #a3e635;
   --Logo1-color: #550197;
   --Logo1-900-color: #5601979a;
   --Logo1-400-color: #bb8be09a;
+  --purple-900: #581c87;
+  --purple-800: #6b21a8;
+  --purple-700: #7e22ce;
   --Logo2-color: #2a8ae1;
   --dark-color: #1f2937;
   --dark-colorclien: #560197;

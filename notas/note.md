@@ -22,8 +22,10 @@
 - Tareas:  
 
 📌 pestaña - servios 
-   Tareas: 
+   - Cambiar la vista de servicios por las que estan en le inicio en ves de los que ahi pero dejar los textos y los botonones
    -
+   📌 Pestaña - clientes:
+   - pornes una lista ordenada con logo, nombre y sus paguin web para que los vena en acion o video puede ser mas adelante.  
 
    paginas de fotografias para vender ya creadas con usuario:
 ...................................................................
