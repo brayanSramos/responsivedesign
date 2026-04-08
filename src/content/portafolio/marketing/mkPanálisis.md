@@ -1,0 +1,18 @@
+---
+txt1: "Análisis de Métricas y Crecimiento Continuo"
+txt2: ""
+desc: "Evaluamos resultados para optimizar estrategias."
+preci: ""
+mes: "Crece mejor"
+img: "img/idea1.webp"
+txtImg: "Img de Campañas"
+comp: ""
+colocomp: ""
+colorCard: "var(--lima-900)"
+colorText: "var(--Logo1-color)"
+colorPaf: ""
+url: "https://brayansramos.github.io/Profile/"
+urlWeb: "https://brayansramos.github.io/Profile/"
+button1: "Analiza"
+button2: "Creativos"
+---

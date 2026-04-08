@@ -1,0 +1,18 @@
+---
+txt1: "Estrategia Integral de"
+txt2: ""
+desc: "Planificamos contenido para crecer y posicionar marca."
+preci: ""
+mes: "Planifica hoy"
+img: "img/idea3.webp"
+txtImg: "Img de Campañas"
+comp: "Redes Sociales"
+colorcomp: ""
+colorCard: "var(--lima-900)"
+colorText: ""
+colorPaf: ""
+url: "https://brayansramos.github.io/Profile/"
+urlWeb: "https://brayansramos.github.io/Profile/"
+button1: "Iniciar"
+button2: "Creativos"
+---

@@ -1,0 +1,18 @@
+---
+txt1: "Optimización de Perfil y Branding Digital"
+txt2: ""
+desc: "Mejoramos imagen para proyectar marca profesional."
+preci: ""
+mes: "Optimiza perfil"
+img: "img/num_1.webp"
+txtImg: "Img de Campañas"
+comp: ""
+colorcomp: "var(--lima-900)"
+colorCard: "var(--purple-800)"
+colorText: "var(--primary-color)"
+colorPaf: "var(--primary-color)"
+url: "https://brayansramos.github.io/Profile/"
+urlWeb: "https://brayansramos.github.io/Profile/"
+button1: "Optimiza"
+button2: "Creativos"
+---

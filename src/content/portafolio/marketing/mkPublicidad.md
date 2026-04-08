@@ -1,0 +1,18 @@
+---
+txt1: "Publicidad Digital en Redes Sociales"
+txt2: ""
+desc: "Creamos anuncios para aumentar alcance y ventas."
+preci: ""
+mes: "Vende más"
+img: "img/num_1.webp"
+txtImg: "Img de Campañas"
+comp: ""
+colorcomp: ""
+colorCard: "var(--purple-700)"
+colorText: "var(--primary-color)"
+colorPaf: "var(--primary-color)"
+url: "https://brayansramos.github.io/Profile/"
+urlWeb: "https://brayansramos.github.io/Profile/"
+button1: "Anunciar"
+button2: "Creativos"
+---

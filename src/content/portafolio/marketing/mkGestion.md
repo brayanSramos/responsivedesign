@@ -1,0 +1,18 @@
+---
+txt1: "Gestión Profesional de"
+txt2: ""
+desc: "Administramos perfiles para mejorar interacción diaria."
+preci: ""
+mes: "Impulsa interacción"
+img: "img/num_2.webp"
+txtImg: "Gestión Profesional"
+comp: "Redes Sociales"
+colorcomp: "var(--lima-900)"
+colorCard: "var(--purple-800)"
+colorText: "var(--primary-color)"
+colorPaf: "var(--primary-color)"
+url: "https://brayansramos.github.io/Profile/"
+urlWeb: "https://brayansramos.github.io/Profile/"
+button1: "Gestiona"
+button2: "Creativos"
+---

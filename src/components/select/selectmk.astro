@@ -3,7 +3,7 @@ import Bottom from '../UX/bottom.astro';
 import CardTittelo from '../card/cardTitulomk.astro';
 import CardHeaderMk from '../card/CardHeaderMk.astro';
 import Card1 from '../card/card-1-mk.astro';
-import Card2 from '../card/card-2-mk.astro';
+import CardGridImg from '../card/cardGridImg.astro';
 import '../../style/global.css';
 
 // const cards = [
@@ -65,32 +65,20 @@ const allPosts = await Astro.glob('../../content/portafolio/marketing/*.md');
             comp={item?.frontmatter?.comp}
             img={item?.frontmatter?.img}
             txtImg={item?.frontmatter?.txtImg}
+            colorcomp={item?.frontmatter?.colorcomp}
             colorCard={item?.frontmatter?.colorCard}
             colorText={item?.frontmatter?.colorText}
             colorPaf={item?.frontmatter?.colorPaf}
             url={item?.frontmatter?.url}
+            urlWeb={item?.frontmatter?.urlWeb}
+            button1={item?.frontmatter?.button1}
+            button2={item?.frontmatter?.button2}
           />
         ))
       }
     </div>
     <!-- GRID IMÁGENES GRANDES -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
-      <div class="rounded-2xl overflow-hidden">
-        <img
-          src="../../public/img/num_3.webp"
-          alt="Campaña publicitaria"
-          class="w-full h-full object-cover"
-        />
-      </div>
-
-      <div class="rounded-2xl overflow-hidden">
-        <img
-          src="../../public/img/num_3.webp"
-          alt="Branding Mosst"
-          class="w-full h-full object-cover"
-        />
-      </div>
-    </div>
+    <CardGridImg />
   </div>
 </section>
 <!-- fin --------------------------------------------------------------------------- -->
