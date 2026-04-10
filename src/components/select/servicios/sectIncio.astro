@@ -1,12 +1,12 @@
 ---
-import IncioServi from "../../../components/card/inicioServi.astro";
-import "../../../style/global.css";
+import IncioServi from '../../../components/card/inicioServi.astro';
+import '../../../style/global.css';
 
-const allPosts = await Astro.glob("../../../content/servicios/inicioServi.md");
+const allPosts = await Astro.glob('../../../content/servicios/inicioServi.md');
 ---
 
 <section class="banner">
-{
+  {
     allPosts.map((item) => (
       <IncioServi
         txt3={item?.frontmatter?.txt3}
@@ -28,7 +28,7 @@ const allPosts = await Astro.glob("../../../content/servicios/inicioServi.md");
     height: 100%;
   }
 
-  .contentimg h1  {
+  .contentimg h1 {
     font-family: Light-Italic;
     font-size: 4em;
     color: var(--Logo1-color);

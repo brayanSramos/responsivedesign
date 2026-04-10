@@ -1,42 +1,42 @@
 ---
-import Header from "../components/header.astro";
-import Footer from "../components/footer.astro";
-import SelectDW from "../components/select/servicios/sectDW.astro";
-import SelectDG from "../components/select/servicios/sectDG.astro";
-import SelectFI from "../components/select/servicios/sectFI.astro";
-import SelectMD from "../components/select/servicios/sectMD.astro";
-import SelectInicio from "../components/select/servicios/sectIncio.astro";
-import Layout from "../layouts/Layout.astro";
-import "../style/global.css";
+import Header from '../components/header.astro';
+import Footer from '../components/footer.astro';
+import SelectDW from '../components/select/servicios/sectDW.astro';
+import SelectDG from '../components/select/servicios/sectDG.astro';
+import SelectFI from '../components/select/servicios/sectFI.astro';
+import SelectMD from '../components/select/servicios/sectMD.astro';
+import SelectInicio from '../components/select/servicios/sectIncio.astro';
+import Layout from '../layouts/Layout.astro';
+import '../style/global.css';
 
-const allPosts = await Astro.glob("../content/*.md");
+const allPosts = await Astro.glob('../content/*.md');
 ---
 
 <Layout title="Responsive Design | Servicios">
   <Header />
-    <SelectInicio />
-    <SelectDW />
-    <SelectDG />
-    <SelectFI />
-    <SelectMD />
+  <SelectInicio />
+  <SelectDW />
+  <SelectDG />
+  <SelectFI />
+  <SelectMD />
   <Footer />
 </Layout>
 
 <script>
-const btnSwitch = document.querySelector<HTMLButtonElement>("#switch");
+  const btnSwitch = document.querySelector<HTMLButtonElement>('#switch');
 
-const toggleTheme = () => {
-  const isDark = document.body.classList.toggle("dark");
-  btnSwitch?.classList.toggle("active", isDark);
-  localStorage.setItem("theme", isDark ? "dark" : "light");
-};
+  const toggleTheme = () => {
+    const isDark = document.body.classList.toggle('dark');
+    btnSwitch?.classList.toggle('active', isDark);
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+  };
 
-// Cargar preferencia
-const savedTheme = localStorage.getItem("theme");
-if (savedTheme === "dark") {
-  document.body.classList.add("dark");
-  btnSwitch?.classList.add("active");
-}
+  // Cargar preferencia
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme === 'dark') {
+    document.body.classList.add('dark');
+    btnSwitch?.classList.add('active');
+  }
 
-btnSwitch?.addEventListener("click", toggleTheme);
+  btnSwitch?.addEventListener('click', toggleTheme);
 </script>

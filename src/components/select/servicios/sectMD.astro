@@ -1,13 +1,21 @@
 ---
-import Card from "../../card/Card.astro";
-import Content from "../../card/content.astro";
-import "../../../style/global.css";
-const allPosts = await Astro.glob ("../../../content/servicios/servMarketing.md");
+import Card from '../../card/Card.astro';
+import Content from '../../card/content.astro';
+import '../../../style/global.css';
+const allPosts = await Astro.glob('../../../content/servicios/servMarketing.md');
 ---
-
 
 <!--select -Diseño Grafico-->
 <section class="banner">
+  {
+    allPosts.map((item) => (
+      <Card
+        title={item?.frontmatter?.title}
+        description={item?.frontmatter?.description}
+        tags={item?.frontmatter?.tags}
+      />
+    ))
+  }
   {
     allPosts.map((item) => (
       <Content
@@ -18,12 +26,4 @@ const allPosts = await Astro.glob ("../../../content/servicios/servMarketing.md"
       />
     ))
   }
-{
-    allPosts.map((item) => (
-      <Card
-        title={item?.frontmatter?.title}
-        description={item?.frontmatter?.description}
-        tags={item?.frontmatter?.tags}
-      />
-    ))
-  }
+</section>
