@@ -1,22 +1,26 @@
 ---
-import "../style/global.css";
+import '../style/global.css';
 interface Props {
-    title: string;
+  titles: string;
+  decrip: string;
 }
 
-const { title } = Astro.props;
+const { titles, decrip } = Astro.props;
 ---
 
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="description" content="Responsive Design" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" type="image/svg+xml" href="../../public/favicon.svg" />
-        <title>{title}</title>
-    </head>
-    <body>
-        <slot />
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Responsive Design" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="../../public/favicon.svg" />
+    <title>{titles}</title>
+  </head>
+  <p>{decrip}</p>
+  <body>
+    <slot />
+  </body>
+
+
 </html>

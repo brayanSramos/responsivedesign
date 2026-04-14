@@ -10,24 +10,26 @@ interface Props {
 const { title, description, image, tags, pubDate } = Astro.props;
 ---
 
-<div class="card">
-  <div class="card_form">
-    <img src={image} alt="{title}" />
-    <span>{title}</span>
-  </div>
-  <div class="card_data">
-    <div style="display: flex" class="data">
-      <div class="text">
-        <label class="text_m">{description}</label>
-        <div class="cube text_s">
-          <label class="side front">{pubDate}</label>
-          <label class="side top">{tags}</label>
+<a href="/portafolio" class="card-link">
+  <div class="card">
+    <div class="card_form">
+      <img src={image} alt="{title}" />
+      <span>{title}</span>
+    </div>
+    <div class="card_data">
+      <div style="display: flex" class="data">
+        <div class="text">
+          <label class="text_m">{description}</label>
+          <div class="cube text_s">
+            <label class="side front">{pubDate}</label>
+            <label class="side top">{tags}</label>
+          </div>
         </div>
       </div>
+      <span title="Acceder a la lista (Temas)">Más-Info</span>
     </div>
-    <span title="Acceder a la lista (Temas)">Más-Info</span>
   </div>
-</div>
+</a>
 
 <style>
   .card {

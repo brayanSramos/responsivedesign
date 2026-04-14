@@ -189,6 +189,16 @@ header ul li a {
 header ul li a:hover {
   color: var(--secundary-color);
 }
+/*--------------------- Estilos de blog Inicio ----------------------------- */
+
+.containerBlog {
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem;
+  background: white;
+}
+
+/*--------------------- Estilos de blog final ----------------------------- */
 
 /* Estilo menu Inicio - a -------------------------------------- */
 

@@ -6,5 +6,5 @@ tags: 'Creamos experiencias digitales que cautivan y conectan.'
 title_Inf: 'Somos una empresa con varios años de experiencia'
 description_Inf: 'Nuestro Proposito inicia tu idea con todos los recursos graficos y correcto para la imagen de tu negocio'
 tags_Inf: 'Creamos'
-boots: 'Más Información'
+boots: 'Explorar'
 --- 
