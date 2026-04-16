@@ -1,9 +1,9 @@
 ---
-title: "post-1"
+title: "post-2"
 texh: "Somos una empresa con varios años de experiencia"
 description: "Soluciones Web a Medida para Potenciar tu Presencia Online."
 pubDate: 2024-03-21
-image: "/public/img/fot3.webp"
+image: "/img/fot.webp"
 tags: ["Astro", "JavaScript"]
 ---
 

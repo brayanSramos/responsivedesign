@@ -7,9 +7,12 @@ import SelectCont from '../components/select/selectCont.astro';
 import Selectservi from '../components/select/selectservi.astro';
 import SelectClient from '../components/select/SelectClientes.astro';
 import Layout from '../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+const posts = await getCollection('blog');
 ---
 
-<Layout titles="Responsive Design">
+<Layout titles="">
   <Header />
   <SelectInicio />
   <SelectQuines />
