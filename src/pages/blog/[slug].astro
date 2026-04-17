@@ -13,6 +13,9 @@ export async function getStaticPaths() {
 
 const post = Astro.props;
 const { Content } = await post.render();
+
+// URL completa para SEO
+const url = `http://localhost:4321/blog/${post.slug}`;
 ---
 
 <BlogLayout
@@ -20,6 +23,7 @@ const { Content } = await post.render();
   description={post.data.description}
   image={post.data.image}
   texh={post.data.texh}
+  url={url}
 >
   <Content />
 </BlogLayout>
