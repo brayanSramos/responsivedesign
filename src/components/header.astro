@@ -1,8 +1,8 @@
 ---
-import "../style/global.css";
-import Logo from "../components/icon/logoRd.astro";
-import logow from "../../public/img/icon/IconWh.svg";
-import { menuItems } from "../menu/navigation.js";
+import '../style/global.css';
+import Logo from '../components/icon/logoRd.astro';
+import logow from '../../public/img/icon/IconWh.svg';
+import { menuItems } from '../menu/navigation.js';
 ---
 
 <section class="zona1">
@@ -29,8 +29,8 @@ import { menuItems } from "../menu/navigation.js";
         }
       </nav>
     </div>
-    <dir >
-    <a href="/" ><img src={logow.src} alt="logo" class="logos w-20" /></a>
+    <dir>
+      <a href="/"><img src={logow.src} alt="logo" class="logos w-20" /></a>
     </dir>
     <!-- final - Menu movil y Logo en SVG-->
 
@@ -50,8 +50,8 @@ import { menuItems } from "../menu/navigation.js";
       <ul>
         <li>
           <button class="switch" id="switch">
-            <span><img class="imgls" src="img/icon/sol.svg" alt="" /></span>
-            <span><img class="imgls" src="img/icon/luna.svg" alt="" /></span>
+            <span><img class="imgls" src="/img/icon/sol.svg" alt="" /></span>
+            <span><img class="imgls" src="/img/icon/luna.svg" alt="" /></span>
           </button>
         </li>
       </ul>
@@ -81,7 +81,7 @@ import { menuItems } from "../menu/navigation.js";
       display: none;
     }
     .logos {
-      display: none;  
+      display: none;
     }
   }
   /* Style for Design movil  */
@@ -177,7 +177,7 @@ import { menuItems } from "../menu/navigation.js";
     .button-toggle:before,
     .button-toggle:after {
       position: absolute;
-      content: "";
+      content: '';
       top: 50%;
       left: 0;
       width: 100%;
@@ -255,7 +255,7 @@ import { menuItems } from "../menu/navigation.js";
     }
     .nav-item:before {
       position: absolute;
-      content: "";
+      content: '';
       top: 50%;
       left: 0;
       width: 100%;

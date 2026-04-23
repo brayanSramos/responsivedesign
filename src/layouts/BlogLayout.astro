@@ -12,20 +12,75 @@ const { title, texh, description, image } = Astro.props;
   <head>
     <Seo title={title} description={description} image={image} />
   </head>
+  <Header />
   <body>
-    <main class="container">
-      <Header />
-      <h1>{texh}</h1>
-      <p>{description}</p>
-      <img src={image} alt={title} />
-      <article>
-        <slot />
-      </article>
-      <Footer />
-    </main>
+    <section class="hero">
+      <div class="overlay"></div>
+      <img src="/img/num_3.webp" alt="eye" />
+
+      <div class="hero-content">
+        <h1>Redefining the future of eye care with innovation</h1>
+      </div>
+      <button class="cta">Make an appointment</button>
+    </section>
+    <h1>{texh}</h1>
+    <p>{description}</p>
+    <img src={image} alt={title} />
+    <article>
+      <slot />
+    </article>
+
+    <Footer />
   </body>
 </html>
+<style>
+  .hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+  }
 
+  .hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8));
+  }
+
+  .hero-content {
+    position: absolute;
+    bottom: 80px;
+    left: 60px;
+    max-width: 700px;
+  }
+
+  .hero h1 {
+    font-size: 64px;
+    font-weight: 300;
+    line-height: 1.1;
+  }
+
+  .hero p {
+    margin-top: 20px;
+    opacity: 0.7;
+  }
+
+  .cta {
+    margin-top: 20px;
+    padding: 14px 30px;
+    border-radius: 30px;
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    backdrop-filter: blur(10px);
+  }
+</style>
 <script>
   const btnSwitch = document.querySelector<HTMLButtonElement>('#switch');
 

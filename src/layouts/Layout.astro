@@ -1,4 +1,5 @@
 ---
+import Seo from '../components/seos/seo.astro';
 import '../style/global.css';
 interface Props {
   titles?: string;
@@ -10,11 +11,12 @@ const { titles } = Astro.props;
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <Seo title={titles} description="Responsive Design" />
+    <!-- <meta charset="UTF-8" />
     <meta name="description" content="Responsive Design" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="../../public/favicon.svg" />
-    <title>{titles}</title>
+    <title>{titles}</title> -->
   </head>
   <body>
     <slot />
